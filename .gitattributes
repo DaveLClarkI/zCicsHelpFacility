@@ -1,0 +1,6 @@
+*.SBF linguist-language=Assembly
+*.C linguist-language=COBOL
+*.CBL linguist-language=COBOL
+*.AWS linguist-language=Binary
+*.JCL linguist-language=JCL
+*.PROC linguist-language=JCL
