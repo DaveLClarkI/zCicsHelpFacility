@@ -1,0 +1,2413 @@
+* ¦¦¦¦¦¦ SBF SOURCE HELPMS                                                      
+HELP    TITLE  'H E L P M S     ( 0 1 . 2 5 )   -   C I C S   H E L P  XHELP0001
+                M A P S E T                                 '           HELP0002
+HELPMS  DFHMSD TYPE=&SYSPARM,                                          XHELP0003
+               STORAGE=AUTO,                                           XHELP0004
+               DATA=FIELD,                                             XHELP0005
+               DSATTS=(COLOR,HILIGHT),                                 XHELP0006
+               LANG=COBOL,                                             XHELP0007
+               MAPATTS=(COLOR,HILIGHT),                                XHELP0008
+               MODE=INOUT,                                             XHELP0009
+               TERM=3270,                                              XHELP0010
+               TIOAPFX=YES                                              HELP0011
+*                                                                       HELP0012
+        PRINT  ON,GEN                                                   HELP0013
+        TITLE  'H E L P M A P   ( 0 1 . 4 2 )   -   C I C S   H E L P  XHELP0014
+                D I S P L A Y   M A P                       '           HELP0015
+HELPMAP DFHMDI SIZE=(27,132)                                            HELP0016
+*              ROW=04,THRU=04,OCCURS=22                                 HELP0017
+        PRINT  ON,NOGEN                                                 HELP0018
+        DFHMDF POS=(01,001),LENGTH=008,ATTRB=(ASKIP,NORM),             XHELP0019
+               INITIAL='HELP    ',                                     XHELP0020
+               COLOR=BLUE                                               HELP0021
+* CBLDNM LABEL=HELP-COMPANY                                             HELP0022
+F010046 DFHMDF POS=(01,046),LENGTH=040,ATTRB=(ASKIP,BRT),              XHELP0023
+               COLOR=TURQUOISE                                          HELP0024
+* CBLDNM LABEL=HELP-SYSDATE                                             HELP0025
+F010121 DFHMDF POS=(01,121),LENGTH=010,ATTRB=(ASKIP,NORM),             XHELP0026
+               INITIAL='mm/dd/yyyy',                                   XHELP0027
+               COLOR=BLUE                                               HELP0028
+* CBLDNM LABEL=HELP-NETNAME                                             HELP0029
+F010133 DFHMDF POS=(02,001),LENGTH=010,ATTRB=(ASKIP,NORM),             XHELP0030
+               COLOR=BLUE                                               HELP0031
+* CBLDNM LABEL=HELP-TITLE                                               HELP0032
+F010178 DFHMDF POS=(02,046),LENGTH=040,ATTRB=(ASKIP,BRT),              XHELP0033
+               INITIAL='            CICS Help System',                 XHELP0034
+               COLOR=NEUTRAL                                            HELP0035
+* CBLDNM LABEL=HELP-SYSTIME                                             HELP0036
+F010253 DFHMDF POS=(02,121),LENGTH=010,ATTRB=(ASKIP,NORM),             XHELP0037
+               INITIAL='hh:mm xx',                                     XHELP0038
+               COLOR=BLUE                                               HELP0039
+        DFHMDF POS=(03,001),LENGTH=001,ATTRB=(ASKIP,BRT),INITIAL=' '    HELP0040
+* CBLDNM LABEL=HELP-LEFT-TEXT                                           HELP0041
+F010397 DFHMDF POS=(04,001),LENGTH=063,ATTRB=(ASKIP,NORM)               HELP0042
+        DFHMDF POS=(04,065),LENGTH=001,ATTRB=(ASKIP,BRT),INITIAL=' '    HELP0043
+* CBLDNM LABEL=HELP-RGHT-TEXT                                           HELP0044
+F010464 DFHMDF POS=(04,068),LENGTH=063,ATTRB=(ASKIP,NORM)               HELP0045
+        DFHMDF POS=(04,132),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0046
+* CBLDNM LABEL=HELP-LEFT-TEXT                                           HELP0047
+F010529 DFHMDF POS=(05,001),LENGTH=063,ATTRB=(ASKIP,NORM)               HELP0048
+        DFHMDF POS=(05,065),LENGTH=001,ATTRB=(ASKIP,BRT),INITIAL=' '    HELP0049
+* CBLDNM LABEL=HELP-RGHT-TEXT                                           HELP0050
+F010596 DFHMDF POS=(05,068),LENGTH=063,ATTRB=(ASKIP,NORM)               HELP0051
+        DFHMDF POS=(05,132),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0052
+* CBLDNM LABEL=HELP-LEFT-TEXT                                           HELP0053
+F010661 DFHMDF POS=(06,001),LENGTH=063,ATTRB=(ASKIP,NORM)               HELP0054
+        DFHMDF POS=(06,065),LENGTH=001,ATTRB=(ASKIP,BRT),INITIAL=' '    HELP0055
+* CBLDNM LABEL=HELP-RGHT-TEXT                                           HELP0056
+F010728 DFHMDF POS=(06,068),LENGTH=063,ATTRB=(ASKIP,NORM)               HELP0057
+        DFHMDF POS=(06,132),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0058
+* CBLDNM LABEL=HELP-LEFT-TEXT                                           HELP0059
+F010793 DFHMDF POS=(07,001),LENGTH=063,ATTRB=(ASKIP,NORM)               HELP0060
+        DFHMDF POS=(07,065),LENGTH=001,ATTRB=(ASKIP,BRT),INITIAL=' '    HELP0061
+* CBLDNM LABEL=HELP-RGHT-TEXT                                           HELP0062
+F010860 DFHMDF POS=(07,068),LENGTH=063,ATTRB=(ASKIP,NORM)               HELP0063
+        DFHMDF POS=(07,132),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0064
+* CBLDNM LABEL=HELP-LEFT-TEXT                                           HELP0065
+F010925 DFHMDF POS=(08,001),LENGTH=063,ATTRB=(ASKIP,NORM)               HELP0066
+        DFHMDF POS=(08,065),LENGTH=001,ATTRB=(ASKIP,BRT),INITIAL=' '    HELP0067
+* CBLDNM LABEL=HELP-RGHT-TEXT                                           HELP0068
+F010992 DFHMDF POS=(08,068),LENGTH=063,ATTRB=(ASKIP,NORM)               HELP0069
+        DFHMDF POS=(08,132),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0070
+* CBLDNM LABEL=HELP-LEFT-TEXT                                           HELP0071
+F011057 DFHMDF POS=(09,001),LENGTH=063,ATTRB=(ASKIP,NORM)               HELP0072
+        DFHMDF POS=(09,065),LENGTH=001,ATTRB=(ASKIP,BRT),INITIAL=' '    HELP0073
+* CBLDNM LABEL=HELP-RGHT-TEXT                                           HELP0074
+F011124 DFHMDF POS=(09,068),LENGTH=063,ATTRB=(ASKIP,NORM)               HELP0075
+        DFHMDF POS=(09,132),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0076
+* CBLDNM LABEL=HELP-LEFT-TEXT                                           HELP0077
+F011189 DFHMDF POS=(10,001),LENGTH=063,ATTRB=(ASKIP,NORM)               HELP0078
+        DFHMDF POS=(10,065),LENGTH=001,ATTRB=(ASKIP,BRT),INITIAL=' '    HELP0079
+* CBLDNM LABEL=HELP-RGHT-TEXT                                           HELP0080
+F011256 DFHMDF POS=(10,068),LENGTH=063,ATTRB=(ASKIP,NORM)               HELP0081
+        DFHMDF POS=(10,132),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0082
+* CBLDNM LABEL=HELP-LEFT-TEXT                                           HELP0083
+F011321 DFHMDF POS=(11,001),LENGTH=063,ATTRB=(ASKIP,NORM)               HELP0084
+        DFHMDF POS=(11,065),LENGTH=001,ATTRB=(ASKIP,BRT),INITIAL=' '    HELP0085
+* CBLDNM LABEL=HELP-RGHT-TEXT                                           HELP0086
+F011388 DFHMDF POS=(11,068),LENGTH=063,ATTRB=(ASKIP,NORM)               HELP0087
+        DFHMDF POS=(11,132),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0088
+* CBLDNM LABEL=HELP-LEFT-TEXT                                           HELP0089
+F011453 DFHMDF POS=(12,001),LENGTH=063,ATTRB=(ASKIP,NORM)               HELP0090
+        DFHMDF POS=(12,065),LENGTH=001,ATTRB=(ASKIP,BRT),INITIAL=' '    HELP0091
+* CBLDNM LABEL=HELP-RGHT-TEXT                                           HELP0092
+F011520 DFHMDF POS=(12,068),LENGTH=063,ATTRB=(ASKIP,NORM)               HELP0093
+        DFHMDF POS=(12,132),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0094
+* CBLDNM LABEL=HELP-LEFT-TEXT                                           HELP0095
+F011585 DFHMDF POS=(13,001),LENGTH=063,ATTRB=(ASKIP,NORM)               HELP0096
+        DFHMDF POS=(13,065),LENGTH=001,ATTRB=(ASKIP,BRT),INITIAL=' '    HELP0097
+* CBLDNM LABEL=HELP-RGHT-TEXT                                           HELP0098
+F011652 DFHMDF POS=(13,068),LENGTH=063,ATTRB=(ASKIP,NORM)               HELP0099
+        DFHMDF POS=(13,132),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0100
+* CBLDNM LABEL=HELP-LEFT-TEXT                                           HELP0101
+F011717 DFHMDF POS=(14,001),LENGTH=063,ATTRB=(ASKIP,NORM)               HELP0102
+        DFHMDF POS=(14,065),LENGTH=001,ATTRB=(ASKIP,BRT),INITIAL=' '    HELP0103
+* CBLDNM LABEL=HELP-RGHT-TEXT                                           HELP0104
+F011784 DFHMDF POS=(14,068),LENGTH=063,ATTRB=(ASKIP,NORM)               HELP0105
+        DFHMDF POS=(14,132),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0106
+* CBLDNM LABEL=HELP-LEFT-TEXT                                           HELP0107
+F011849 DFHMDF POS=(15,001),LENGTH=063,ATTRB=(ASKIP,NORM)               HELP0108
+        DFHMDF POS=(15,065),LENGTH=001,ATTRB=(ASKIP,BRT),INITIAL=' '    HELP0109
+* CBLDNM LABEL=HELP-RGHT-TEXT                                           HELP0110
+F011916 DFHMDF POS=(15,068),LENGTH=063,ATTRB=(ASKIP,NORM)               HELP0111
+        DFHMDF POS=(15,132),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0112
+* CBLDNM LABEL=HELP-LEFT-TEXT                                           HELP0113
+F011981 DFHMDF POS=(16,001),LENGTH=063,ATTRB=(ASKIP,NORM)               HELP0114
+        DFHMDF POS=(16,065),LENGTH=001,ATTRB=(ASKIP,BRT),INITIAL=' '    HELP0115
+* CBLDNM LABEL=HELP-RGHT-TEXT                                           HELP0116
+F012048 DFHMDF POS=(16,068),LENGTH=063,ATTRB=(ASKIP,NORM)               HELP0117
+        DFHMDF POS=(16,132),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0118
+* CBLDNM LABEL=HELP-LEFT-TEXT                                           HELP0119
+F012113 DFHMDF POS=(17,001),LENGTH=063,ATTRB=(ASKIP,NORM)               HELP0120
+        DFHMDF POS=(17,065),LENGTH=001,ATTRB=(ASKIP,BRT),INITIAL=' '    HELP0121
+* CBLDNM LABEL=HELP-RGHT-TEXT                                           HELP0122
+F012180 DFHMDF POS=(17,068),LENGTH=063,ATTRB=(ASKIP,NORM)               HELP0123
+        DFHMDF POS=(17,132),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0124
+* CBLDNM LABEL=HELP-LEFT-TEXT                                           HELP0125
+F012245 DFHMDF POS=(18,001),LENGTH=063,ATTRB=(ASKIP,NORM)               HELP0126
+        DFHMDF POS=(18,065),LENGTH=001,ATTRB=(ASKIP,BRT),INITIAL=' '    HELP0127
+* CBLDNM LABEL=HELP-RGHT-TEXT                                           HELP0128
+F012312 DFHMDF POS=(18,068),LENGTH=063,ATTRB=(ASKIP,NORM)               HELP0129
+        DFHMDF POS=(18,132),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0130
+* CBLDNM LABEL=HELP-LEFT-TEXT                                           HELP0131
+F012377 DFHMDF POS=(19,001),LENGTH=063,ATTRB=(ASKIP,NORM)               HELP0132
+        DFHMDF POS=(19,065),LENGTH=001,ATTRB=(ASKIP,BRT),INITIAL=' '    HELP0133
+* CBLDNM LABEL=HELP-RGHT-TEXT                                           HELP0134
+F012444 DFHMDF POS=(19,068),LENGTH=063,ATTRB=(ASKIP,NORM)               HELP0135
+        DFHMDF POS=(19,132),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0136
+* CBLDNM LABEL=HELP-LEFT-TEXT                                           HELP0137
+F012509 DFHMDF POS=(20,001),LENGTH=063,ATTRB=(ASKIP,NORM)               HELP0138
+        DFHMDF POS=(20,065),LENGTH=001,ATTRB=(ASKIP,BRT),INITIAL=' '    HELP0139
+* CBLDNM LABEL=HELP-RGHT-TEXT                                           HELP0140
+F012576 DFHMDF POS=(20,068),LENGTH=063,ATTRB=(ASKIP,NORM)               HELP0141
+        DFHMDF POS=(20,132),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0142
+* CBLDNM LABEL=HELP-LEFT-TEXT                                           HELP0143
+F012641 DFHMDF POS=(21,001),LENGTH=063,ATTRB=(ASKIP,NORM)               HELP0144
+        DFHMDF POS=(21,065),LENGTH=001,ATTRB=(ASKIP,BRT),INITIAL=' '    HELP0145
+* CBLDNM LABEL=HELP-RGHT-TEXT                                           HELP0146
+F012708 DFHMDF POS=(21,068),LENGTH=063,ATTRB=(ASKIP,NORM)               HELP0147
+        DFHMDF POS=(21,132),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0148
+* CBLDNM LABEL=HELP-LEFT-TEXT                                           HELP0149
+F012773 DFHMDF POS=(22,001),LENGTH=063,ATTRB=(ASKIP,NORM)               HELP0150
+        DFHMDF POS=(22,065),LENGTH=001,ATTRB=(ASKIP,BRT),INITIAL=' '    HELP0151
+* CBLDNM LABEL=HELP-RGHT-TEXT                                           HELP0152
+F012840 DFHMDF POS=(22,068),LENGTH=063,ATTRB=(ASKIP,NORM)               HELP0153
+        DFHMDF POS=(22,132),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0154
+* CBLDNM LABEL=HELP-LEFT-TEXT                                           HELP0155
+F012905 DFHMDF POS=(23,001),LENGTH=063,ATTRB=(ASKIP,NORM)               HELP0156
+        DFHMDF POS=(23,065),LENGTH=001,ATTRB=(ASKIP,BRT),INITIAL=' '    HELP0157
+* CBLDNM LABEL=HELP-RGHT-TEXT                                           HELP0158
+F012972 DFHMDF POS=(23,068),LENGTH=063,ATTRB=(ASKIP,NORM)               HELP0159
+        DFHMDF POS=(23,132),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0160
+* CBLDNM LABEL=HELP-LEFT-TEXT                                           HELP0161
+F013037 DFHMDF POS=(24,001),LENGTH=063,ATTRB=(ASKIP,NORM)               HELP0162
+        DFHMDF POS=(24,065),LENGTH=001,ATTRB=(ASKIP,BRT),INITIAL=' '    HELP0163
+* CBLDNM LABEL=HELP-RGHT-TEXT                                           HELP0164
+F013104 DFHMDF POS=(24,068),LENGTH=063,ATTRB=(ASKIP,NORM)               HELP0165
+        DFHMDF POS=(24,132),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0166
+* CBLDNM LABEL=HELP-LEFT-TEXT                                           HELP0167
+F013169 DFHMDF POS=(25,001),LENGTH=063,ATTRB=(ASKIP,NORM)               HELP0168
+        DFHMDF POS=(25,065),LENGTH=001,ATTRB=(ASKIP,BRT),INITIAL=' '    HELP0169
+* CBLDNM LABEL=HELP-RGHT-TEXT                                           HELP0170
+F013236 DFHMDF POS=(25,068),LENGTH=063,ATTRB=(ASKIP,NORM)               HELP0171
+        DFHMDF POS=(25,132),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0172
+* CBLDNM LABEL=HELP-MESSAGE                                             HELP0173
+F013301 DFHMDF POS=(26,001),LENGTH=078,ATTRB=(ASKIP,NORM),             XHELP0174
+               COLOR=RED                                                HELP0175
+        DFHMDF POS=(26,080),LENGTH=001,ATTRB=(ASKIP,BRT),INITIAL=' '    HELP0176
+        DFHMDF POS=(27,001),LENGTH=005,ATTRB=(ASKIP,BRT),              XHELP0177
+               INITIAL='Keys:',                                        XHELP0178
+               COLOR=TURQUOISE                                          HELP0179
+* CBLDNM LABEL=HELP-ESC-LABEL                                           HELP0180
+F013439 DFHMDF POS=(27,007),LENGTH=003,ATTRB=(ASKIP,BRT),              XHELP0181
+               INITIAL='ESC'                                            HELP0182
+* CBLDNM LABEL=HELP-ESC-ACTION                                          HELP0183
+F013443 DFHMDF POS=(27,011),LENGTH=006,ATTRB=(ASKIP,NORM),             XHELP0184
+               INITIAL='= End,',                                       XHELP0185
+               COLOR=PINK                                               HELP0186
+* CBLDNM LABEL=HELP-END-LABEL                                           HELP0187
+F013450 DFHMDF POS=(27,018),LENGTH=002,ATTRB=(ASKIP,BRT),              XHELP0188
+               INITIAL='F3'                                             HELP0189
+* CBLDNM LABEL=HELP-END-ACTION                                          HELP0190
+F013453 DFHMDF POS=(27,021),LENGTH=007,ATTRB=(ASKIP,NORM),             XHELP0191
+               INITIAL='= Main,',                                      XHELP0192
+               COLOR=PINK                                               HELP0193
+* CBLDNM LABEL=HELP-PREV-LABEL                                          HELP0194
+F013461 DFHMDF POS=(27,029),LENGTH=005,ATTRB=(ASKIP,BRT),              XHELP0195
+               INITIAL='F6/F7'                                          HELP0196
+* CBLDNM LABEL=HELP-PREV-ACTION                                         HELP0197
+F013467 DFHMDF POS=(27,035),LENGTH=013,ATTRB=(ASKIP,NORM),             XHELP0198
+               INITIAL='= First/Prev,',                                XHELP0199
+               COLOR=PINK                                               HELP0200
+* CBLDNM LABEL=HELP-NEXT-LABEL                                          HELP0201
+F013481 DFHMDF POS=(27,049),LENGTH=005,ATTRB=(ASKIP,BRT),              XHELP0202
+               INITIAL='F8/F9'                                          HELP0203
+* CBLDNM LABEL=HELP-NEXT-ACTION                                         HELP0204
+F013487 DFHMDF POS=(27,055),LENGTH=012,ATTRB=(ASKIP,NORM),             XHELP0205
+               INITIAL='= Next/Last,',                                 XHELP0206
+               COLOR=PINK                                               HELP0207
+* CBLDNM LABEL=HELP-SECTION-LABEL                                       HELP0208
+F013500 DFHMDF POS=(27,068),LENGTH=007,ATTRB=(ASKIP,BRT),              XHELP0209
+               INITIAL='F10/F11'                                        HELP0210
+* CBLDNM LABEL=HELP-SECTION-ACTION                                      HELP0211
+F013508 DFHMDF POS=(27,076),LENGTH=020,ATTRB=(ASKIP,NORM),             XHELP0212
+               INITIAL='= Prev/Next section,',                         XHELP0213
+               COLOR=PINK                                               HELP0214
+* CBLDNM LABEL=HELP-EDIT-LABEL                                          HELP0215
+F013529 DFHMDF POS=(27,097),LENGTH=003,ATTRB=(ASKIP,BRT),              XHELP0216
+               INITIAL='F24'                                            HELP0217
+* CBLDNM LABEL=HELP-EDIT-ACTION                                         HELP0218
+F013533 DFHMDF POS=(27,101),LENGTH=011,ATTRB=(ASKIP,NORM),             XHELP0219
+               INITIAL='= Edit.',                                      XHELP0220
+               COLOR=PINK                                               HELP0221
+* CBLDNM LABEL=HELP-TRAN-CODE                                           HELP0222
+F013550 DFHMDF POS=(27,118),LENGTH=004,ATTRB=(ASKIP,NORM),             XHELP0223
+               INITIAL='TRAN',                                         XHELP0224
+               COLOR=BLUE                                               HELP0225
+* CBLDNM LABEL=HELP-NAME-CODE                                           HELP0226
+F013555 DFHMDF POS=(27,123),LENGTH=008,ATTRB=(ASKIP,NORM),             XHELP0227
+               INITIAL='HELPNAME',                                     XHELP0228
+               COLOR=BLUE                                               HELP0229
+*                                                                       HELP0230
+        PRINT  ON,GEN                                                   HELP0231
+        TITLE  'H E L P X X X   ( 0 1 . 0 9 )   -   C I C S   H E L P  XHELP0232
+                P R O T E C T   M A P                       '           HELP0233
+HELPXXX DFHMDI SIZE=(27,132)                                            HELP0234
+        PRINT  ON,NOGEN                                                 HELP0235
+        DFHMDF POS=(04,001),LENGTH=000,ATTRB=(ASKIP,NORM),             XHELP0236
+               COLOR=GREEN                                              HELP0237
+        DFHMDF POS=(04,068),LENGTH=000,ATTRB=(ASKIP,NORM),             XHELP0238
+               COLOR=GREEN                                              HELP0239
+        DFHMDF POS=(05,001),LENGTH=000,ATTRB=(ASKIP,NORM),             XHELP0240
+               COLOR=GREEN                                              HELP0241
+        DFHMDF POS=(05,068),LENGTH=000,ATTRB=(ASKIP,NORM),             XHELP0242
+               COLOR=GREEN                                              HELP0243
+        DFHMDF POS=(06,001),LENGTH=000,ATTRB=(ASKIP,NORM),             XHELP0244
+               COLOR=GREEN                                              HELP0245
+        DFHMDF POS=(06,068),LENGTH=000,ATTRB=(ASKIP,NORM),             XHELP0246
+               COLOR=GREEN                                              HELP0247
+        DFHMDF POS=(07,001),LENGTH=000,ATTRB=(ASKIP,NORM),             XHELP0248
+               COLOR=GREEN                                              HELP0249
+        DFHMDF POS=(07,068),LENGTH=000,ATTRB=(ASKIP,NORM),             XHELP0250
+               COLOR=GREEN                                              HELP0251
+        DFHMDF POS=(08,001),LENGTH=000,ATTRB=(ASKIP,NORM),             XHELP0252
+               COLOR=GREEN                                              HELP0253
+        DFHMDF POS=(08,068),LENGTH=000,ATTRB=(ASKIP,NORM),             XHELP0254
+               COLOR=GREEN                                              HELP0255
+        DFHMDF POS=(09,001),LENGTH=000,ATTRB=(ASKIP,NORM),             XHELP0256
+               COLOR=GREEN                                              HELP0257
+        DFHMDF POS=(09,068),LENGTH=000,ATTRB=(ASKIP,NORM),             XHELP0258
+               COLOR=GREEN                                              HELP0259
+        DFHMDF POS=(10,001),LENGTH=000,ATTRB=(ASKIP,NORM),             XHELP0260
+               COLOR=GREEN                                              HELP0261
+        DFHMDF POS=(10,068),LENGTH=000,ATTRB=(ASKIP,NORM),             XHELP0262
+               COLOR=GREEN                                              HELP0263
+        DFHMDF POS=(11,001),LENGTH=000,ATTRB=(ASKIP,NORM),             XHELP0264
+               COLOR=GREEN                                              HELP0265
+        DFHMDF POS=(11,068),LENGTH=000,ATTRB=(ASKIP,NORM),             XHELP0266
+               COLOR=GREEN                                              HELP0267
+        DFHMDF POS=(12,001),LENGTH=000,ATTRB=(ASKIP,NORM),             XHELP0268
+               COLOR=GREEN                                              HELP0269
+        DFHMDF POS=(12,068),LENGTH=000,ATTRB=(ASKIP,NORM),             XHELP0270
+               COLOR=GREEN                                              HELP0271
+        DFHMDF POS=(13,001),LENGTH=000,ATTRB=(ASKIP,NORM),             XHELP0272
+               COLOR=GREEN                                              HELP0273
+        DFHMDF POS=(13,068),LENGTH=000,ATTRB=(ASKIP,NORM),             XHELP0274
+               COLOR=GREEN                                              HELP0275
+        DFHMDF POS=(14,001),LENGTH=000,ATTRB=(ASKIP,NORM),             XHELP0276
+               COLOR=GREEN                                              HELP0277
+        DFHMDF POS=(14,068),LENGTH=000,ATTRB=(ASKIP,NORM),             XHELP0278
+               COLOR=GREEN                                              HELP0279
+        DFHMDF POS=(15,001),LENGTH=000,ATTRB=(ASKIP,NORM),             XHELP0280
+               COLOR=GREEN                                              HELP0281
+        DFHMDF POS=(15,068),LENGTH=000,ATTRB=(ASKIP,NORM),             XHELP0282
+               COLOR=GREEN                                              HELP0283
+        DFHMDF POS=(16,001),LENGTH=000,ATTRB=(ASKIP,NORM),             XHELP0284
+               COLOR=GREEN                                              HELP0285
+        DFHMDF POS=(16,068),LENGTH=000,ATTRB=(ASKIP,NORM),             XHELP0286
+               COLOR=GREEN                                              HELP0287
+        DFHMDF POS=(17,001),LENGTH=000,ATTRB=(ASKIP,NORM),             XHELP0288
+               COLOR=GREEN                                              HELP0289
+        DFHMDF POS=(17,068),LENGTH=000,ATTRB=(ASKIP,NORM),             XHELP0290
+               COLOR=GREEN                                              HELP0291
+        DFHMDF POS=(18,001),LENGTH=000,ATTRB=(ASKIP,NORM),             XHELP0292
+               COLOR=GREEN                                              HELP0293
+        DFHMDF POS=(18,068),LENGTH=000,ATTRB=(ASKIP,NORM),             XHELP0294
+               COLOR=GREEN                                              HELP0295
+        DFHMDF POS=(19,001),LENGTH=000,ATTRB=(ASKIP,NORM),             XHELP0296
+               COLOR=GREEN                                              HELP0297
+        DFHMDF POS=(19,068),LENGTH=000,ATTRB=(ASKIP,NORM),             XHELP0298
+               COLOR=GREEN                                              HELP0299
+        DFHMDF POS=(20,001),LENGTH=000,ATTRB=(ASKIP,NORM),             XHELP0300
+               COLOR=GREEN                                              HELP0301
+        DFHMDF POS=(20,068),LENGTH=000,ATTRB=(ASKIP,NORM),             XHELP0302
+               COLOR=GREEN                                              HELP0303
+        DFHMDF POS=(21,001),LENGTH=000,ATTRB=(ASKIP,NORM),             XHELP0304
+               COLOR=GREEN                                              HELP0305
+        DFHMDF POS=(21,068),LENGTH=000,ATTRB=(ASKIP,NORM),             XHELP0306
+               COLOR=GREEN                                              HELP0307
+        DFHMDF POS=(22,001),LENGTH=000,ATTRB=(ASKIP,NORM),             XHELP0308
+               COLOR=GREEN                                              HELP0309
+        DFHMDF POS=(22,068),LENGTH=000,ATTRB=(ASKIP,NORM),             XHELP0310
+               COLOR=GREEN                                              HELP0311
+        DFHMDF POS=(23,001),LENGTH=000,ATTRB=(ASKIP,NORM),             XHELP0312
+               COLOR=GREEN                                              HELP0313
+        DFHMDF POS=(23,068),LENGTH=000,ATTRB=(ASKIP,NORM),             XHELP0314
+               COLOR=GREEN                                              HELP0315
+        DFHMDF POS=(24,001),LENGTH=000,ATTRB=(ASKIP,NORM),             XHELP0316
+               COLOR=GREEN                                              HELP0317
+        DFHMDF POS=(24,068),LENGTH=000,ATTRB=(ASKIP,NORM),             XHELP0318
+               COLOR=GREEN                                              HELP0319
+        DFHMDF POS=(25,001),LENGTH=000,ATTRB=(ASKIP,NORM),             XHELP0320
+               COLOR=GREEN                                              HELP0321
+        DFHMDF POS=(25,068),LENGTH=000,ATTRB=(ASKIP,NORM),             XHELP0322
+               COLOR=GREEN                                              HELP0323
+*                                                                       HELP0324
+        PRINT  ON,GEN                                                   HELP0325
+        TITLE  'S E L T W I N   ( 0 1 . 1 9 )   -   M A I N   M A P   SXHELP0326
+                E L E C T I O N S   W I N D O W             '           HELP0327
+SELTWIN DFHMDI SIZE=(27,132)                                            HELP0328
+*              ROW=05,THRU=05,OCCURS=06                                 HELP0329
+        PRINT  ON,NOGEN                                                 HELP0330
+        DFHMDF POS=(04,046),LENGTH=040,ATTRB=(ASKIP,NORM),             XHELP0331
+               INITIAL='          Main Help Selections          ',     XHELP0332
+               COLOR=TURQUOISE,                                        XHELP0333
+               HILIGHT=REVERSE                                          HELP0334
+        DFHMDF POS=(04,087),LENGTH=000,ATTRB=(ASKIP,NORM),             XHELP0335
+               COLOR=GREEN                                              HELP0336
+        DFHMDF POS=(05,046),LENGTH=002,ATTRB=(ASKIP,NORM),             XHELP0337
+               XINIT=4040,                                             XHELP0338
+               COLOR=TURQUOISE,                                        XHELP0339
+               HILIGHT=REVERSE                                          HELP0340
+        DFHMDF POS=(05,049),LENGTH=005,ATTRB=(ASKIP,NORM),             XHELP0341
+               INITIAL='PF1 :',                                        XHELP0342
+               COLOR=YELLOW                                             HELP0343
+* CBLDNM LABEL=SELT-SELECTION-1                                         HELP0344
+F030583 DFHMDF POS=(05,055),LENGTH=008,ATTRB=(UNPROT,NORM,FSET),       XHELP0345
+               COLOR=GREEN,                                            XHELP0346
+               HILIGHT=UNDERLINE                                        HELP0347
+        DFHMDF POS=(05,064),LENGTH=001,ATTRB=(ASKIP,BRT),INITIAL=' '    HELP0348
+        DFHMDF POS=(05,066),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0349
+        DFHMDF POS=(05,067),LENGTH=001,ATTRB=(ASKIP,BRT),INITIAL=' '    HELP0350
+        DFHMDF POS=(05,069),LENGTH=005,ATTRB=(ASKIP,NORM),             XHELP0351
+               INITIAL='PF7 :',                                        XHELP0352
+               COLOR=YELLOW                                             HELP0353
+* CBLDNM LABEL=SELT-SELECTION-2                                         HELP0354
+F030603 DFHMDF POS=(05,075),LENGTH=008,ATTRB=(UNPROT,NORM,FSET),       XHELP0355
+               COLOR=GREEN,                                            XHELP0356
+               HILIGHT=UNDERLINE                                        HELP0357
+        DFHMDF POS=(05,084),LENGTH=002,ATTRB=(ASKIP,NORM),             XHELP0358
+               XINIT=4040,                                             XHELP0359
+               COLOR=TURQUOISE,                                        XHELP0360
+               HILIGHT=REVERSE                                          HELP0361
+        DFHMDF POS=(05,087),LENGTH=000,ATTRB=(ASKIP,NORM),             XHELP0362
+               COLOR=GREEN                                              HELP0363
+        DFHMDF POS=(06,046),LENGTH=002,ATTRB=(ASKIP,NORM),             XHELP0364
+               XINIT=4040,                                             XHELP0365
+               COLOR=TURQUOISE,                                        XHELP0366
+               HILIGHT=REVERSE                                          HELP0367
+        DFHMDF POS=(06,049),LENGTH=005,ATTRB=(ASKIP,NORM),             XHELP0368
+               INITIAL='PF2 :',                                        XHELP0369
+               COLOR=YELLOW                                             HELP0370
+* CBLDNM LABEL=SELT-SELECTION-1                                         HELP0371
+F030715 DFHMDF POS=(06,055),LENGTH=008,ATTRB=(UNPROT,NORM,FSET),       XHELP0372
+               COLOR=GREEN,                                            XHELP0373
+               HILIGHT=UNDERLINE                                        HELP0374
+        DFHMDF POS=(06,064),LENGTH=001,ATTRB=(ASKIP,BRT),INITIAL=' '    HELP0375
+        DFHMDF POS=(06,066),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0376
+        DFHMDF POS=(06,067),LENGTH=001,ATTRB=(ASKIP,BRT),INITIAL=' '    HELP0377
+        DFHMDF POS=(06,069),LENGTH=005,ATTRB=(ASKIP,NORM),             XHELP0378
+               INITIAL='PF8 :',                                        XHELP0379
+               COLOR=YELLOW                                             HELP0380
+* CBLDNM LABEL=SELT-SELECTION-2                                         HELP0381
+F030735 DFHMDF POS=(06,075),LENGTH=008,ATTRB=(UNPROT,NORM,FSET),       XHELP0382
+               COLOR=GREEN,                                            XHELP0383
+               HILIGHT=UNDERLINE                                        HELP0384
+        DFHMDF POS=(06,084),LENGTH=002,ATTRB=(ASKIP,NORM),             XHELP0385
+               XINIT=4040,                                             XHELP0386
+               COLOR=TURQUOISE,                                        XHELP0387
+               HILIGHT=REVERSE                                          HELP0388
+        DFHMDF POS=(06,087),LENGTH=000,ATTRB=(ASKIP,NORM),             XHELP0389
+               COLOR=GREEN                                              HELP0390
+        DFHMDF POS=(07,046),LENGTH=002,ATTRB=(ASKIP,NORM),             XHELP0391
+               XINIT=4040,                                             XHELP0392
+               COLOR=TURQUOISE,                                        XHELP0393
+               HILIGHT=REVERSE                                          HELP0394
+        DFHMDF POS=(07,049),LENGTH=005,ATTRB=(ASKIP,NORM),             XHELP0395
+               INITIAL='PF3 :',                                        XHELP0396
+               COLOR=YELLOW                                             HELP0397
+* CBLDNM LABEL=SELT-SELECTION-1                                         HELP0398
+F030847 DFHMDF POS=(07,055),LENGTH=008,ATTRB=(UNPROT,NORM,FSET),       XHELP0399
+               COLOR=GREEN,                                            XHELP0400
+               HILIGHT=UNDERLINE                                        HELP0401
+        DFHMDF POS=(07,064),LENGTH=001,ATTRB=(ASKIP,BRT),INITIAL=' '    HELP0402
+        DFHMDF POS=(07,066),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0403
+        DFHMDF POS=(07,067),LENGTH=001,ATTRB=(ASKIP,BRT),INITIAL=' '    HELP0404
+        DFHMDF POS=(07,069),LENGTH=005,ATTRB=(ASKIP,NORM),             XHELP0405
+               INITIAL='PF9 :',                                        XHELP0406
+               COLOR=YELLOW                                             HELP0407
+* CBLDNM LABEL=SELT-SELECTION-2                                         HELP0408
+F030867 DFHMDF POS=(07,075),LENGTH=008,ATTRB=(UNPROT,NORM,FSET),       XHELP0409
+               COLOR=GREEN,                                            XHELP0410
+               HILIGHT=UNDERLINE                                        HELP0411
+        DFHMDF POS=(07,084),LENGTH=002,ATTRB=(ASKIP,NORM),             XHELP0412
+               XINIT=4040,                                             XHELP0413
+               COLOR=TURQUOISE,                                        XHELP0414
+               HILIGHT=REVERSE                                          HELP0415
+        DFHMDF POS=(07,087),LENGTH=000,ATTRB=(ASKIP,NORM),             XHELP0416
+               COLOR=GREEN                                              HELP0417
+        DFHMDF POS=(08,046),LENGTH=002,ATTRB=(ASKIP,NORM),             XHELP0418
+               XINIT=4040,                                             XHELP0419
+               COLOR=TURQUOISE,                                        XHELP0420
+               HILIGHT=REVERSE                                          HELP0421
+        DFHMDF POS=(08,049),LENGTH=005,ATTRB=(ASKIP,NORM),             XHELP0422
+               INITIAL='PF4 :',                                        XHELP0423
+               COLOR=YELLOW                                             HELP0424
+* CBLDNM LABEL=SELT-SELECTION-1                                         HELP0425
+F030979 DFHMDF POS=(08,055),LENGTH=008,ATTRB=(UNPROT,NORM,FSET),       XHELP0426
+               COLOR=GREEN,                                            XHELP0427
+               HILIGHT=UNDERLINE                                        HELP0428
+        DFHMDF POS=(08,064),LENGTH=001,ATTRB=(ASKIP,BRT),INITIAL=' '    HELP0429
+        DFHMDF POS=(08,066),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0430
+        DFHMDF POS=(08,067),LENGTH=001,ATTRB=(ASKIP,BRT),INITIAL=' '    HELP0431
+        DFHMDF POS=(08,069),LENGTH=005,ATTRB=(ASKIP,NORM),             XHELP0432
+               INITIAL='PF10:',                                        XHELP0433
+               COLOR=YELLOW                                             HELP0434
+* CBLDNM LABEL=SELT-SELECTION-2                                         HELP0435
+F030999 DFHMDF POS=(08,075),LENGTH=008,ATTRB=(UNPROT,NORM,FSET),       XHELP0436
+               COLOR=GREEN,                                            XHELP0437
+               HILIGHT=UNDERLINE                                        HELP0438
+        DFHMDF POS=(08,084),LENGTH=002,ATTRB=(ASKIP,NORM),             XHELP0439
+               XINIT=4040,                                             XHELP0440
+               COLOR=TURQUOISE,                                        XHELP0441
+               HILIGHT=REVERSE                                          HELP0442
+        DFHMDF POS=(08,087),LENGTH=000,ATTRB=(ASKIP,NORM),             XHELP0443
+               COLOR=GREEN                                              HELP0444
+        DFHMDF POS=(09,046),LENGTH=002,ATTRB=(ASKIP,NORM),             XHELP0445
+               XINIT=4040,                                             XHELP0446
+               COLOR=TURQUOISE,                                        XHELP0447
+               HILIGHT=REVERSE                                          HELP0448
+        DFHMDF POS=(09,049),LENGTH=005,ATTRB=(ASKIP,NORM),             XHELP0449
+               INITIAL='PF5 :',                                        XHELP0450
+               COLOR=YELLOW                                             HELP0451
+* CBLDNM LABEL=SELT-SELECTION-1                                         HELP0452
+F031111 DFHMDF POS=(09,055),LENGTH=008,ATTRB=(UNPROT,NORM,FSET),       XHELP0453
+               COLOR=GREEN,                                            XHELP0454
+               HILIGHT=UNDERLINE                                        HELP0455
+        DFHMDF POS=(09,064),LENGTH=001,ATTRB=(ASKIP,BRT),INITIAL=' '    HELP0456
+        DFHMDF POS=(09,066),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0457
+        DFHMDF POS=(09,067),LENGTH=001,ATTRB=(ASKIP,BRT),INITIAL=' '    HELP0458
+        DFHMDF POS=(09,069),LENGTH=005,ATTRB=(ASKIP,NORM),             XHELP0459
+               INITIAL='PF11:',                                        XHELP0460
+               COLOR=YELLOW                                             HELP0461
+* CBLDNM LABEL=SELT-SELECTION-2                                         HELP0462
+F031131 DFHMDF POS=(09,075),LENGTH=008,ATTRB=(UNPROT,NORM,FSET),       XHELP0463
+               COLOR=GREEN,                                            XHELP0464
+               HILIGHT=UNDERLINE                                        HELP0465
+        DFHMDF POS=(09,084),LENGTH=002,ATTRB=(ASKIP,NORM),             XHELP0466
+               XINIT=4040,                                             XHELP0467
+               COLOR=TURQUOISE,                                        XHELP0468
+               HILIGHT=REVERSE                                          HELP0469
+        DFHMDF POS=(09,087),LENGTH=000,ATTRB=(ASKIP,NORM),             XHELP0470
+               COLOR=GREEN                                              HELP0471
+        DFHMDF POS=(10,046),LENGTH=002,ATTRB=(ASKIP,NORM),             XHELP0472
+               XINIT=4040,                                             XHELP0473
+               COLOR=TURQUOISE,                                        XHELP0474
+               HILIGHT=REVERSE                                          HELP0475
+        DFHMDF POS=(10,049),LENGTH=005,ATTRB=(ASKIP,NORM),             XHELP0476
+               INITIAL='PF6 :',                                        XHELP0477
+               COLOR=YELLOW                                             HELP0478
+* CBLDNM LABEL=SELT-SELECTION-1                                         HELP0479
+F031243 DFHMDF POS=(10,055),LENGTH=008,ATTRB=(UNPROT,NORM,FSET),       XHELP0480
+               COLOR=GREEN,                                            XHELP0481
+               HILIGHT=UNDERLINE                                        HELP0482
+        DFHMDF POS=(10,064),LENGTH=001,ATTRB=(ASKIP,BRT),INITIAL=' '    HELP0483
+        DFHMDF POS=(10,066),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0484
+        DFHMDF POS=(10,067),LENGTH=001,ATTRB=(ASKIP,BRT),INITIAL=' '    HELP0485
+        DFHMDF POS=(10,069),LENGTH=005,ATTRB=(ASKIP,NORM),             XHELP0486
+               INITIAL='PF12:',                                        XHELP0487
+               COLOR=YELLOW                                             HELP0488
+* CBLDNM LABEL=SELT-SELECTION-2                                         HELP0489
+F031263 DFHMDF POS=(10,075),LENGTH=008,ATTRB=(UNPROT,NORM,FSET),       XHELP0490
+               COLOR=GREEN,                                            XHELP0491
+               HILIGHT=UNDERLINE                                        HELP0492
+        DFHMDF POS=(10,084),LENGTH=002,ATTRB=(ASKIP,NORM),             XHELP0493
+               XINIT=4040,                                             XHELP0494
+               COLOR=TURQUOISE,                                        XHELP0495
+               HILIGHT=REVERSE                                          HELP0496
+        DFHMDF POS=(10,087),LENGTH=000,ATTRB=(ASKIP,NORM),             XHELP0497
+               COLOR=GREEN                                              HELP0498
+        DFHMDF POS=(11,046),LENGTH=040,ATTRB=(ASKIP,NORM),             XHELP0499
+               INITIAL='    Press ENTER to update and exit.     ',     XHELP0500
+               COLOR=TURQUOISE,                                        XHELP0501
+               HILIGHT=REVERSE                                          HELP0502
+        DFHMDF POS=(11,087),LENGTH=000,ATTRB=(ASKIP,NORM),             XHELP0503
+               COLOR=GREEN                                              HELP0504
+*                                                                       HELP0505
+        PRINT  ON,GEN                                                   HELP0506
+        TITLE  'S E L T E R R   ( 0 1 . 0 6 )   -   M A I N   M A P   SXHELP0507
+                E L E C T I O N S   E R R O R               '           HELP0508
+SELTERR DFHMDI SIZE=(27,132)                                            HELP0509
+        PRINT  ON,NOGEN                                                 HELP0510
+        DFHMDF POS=(04,046),LENGTH=040,ATTRB=(ASKIP,NORM),             XHELP0511
+               INITIAL='          Main Help Selections          ',     XHELP0512
+               COLOR=RED,                                              XHELP0513
+               HILIGHT=REVERSE                                          HELP0514
+        DFHMDF POS=(04,087),LENGTH=000,ATTRB=(ASKIP,NORM),             XHELP0515
+               COLOR=GREEN                                              HELP0516
+        DFHMDF POS=(05,046),LENGTH=002,ATTRB=(ASKIP,NORM),             XHELP0517
+               XINIT=4040,                                             XHELP0518
+               COLOR=RED,                                              XHELP0519
+               HILIGHT=REVERSE                                          HELP0520
+        DFHMDF POS=(05,084),LENGTH=002,ATTRB=(ASKIP,NORM),             XHELP0521
+               XINIT=4040,                                             XHELP0522
+               COLOR=RED,                                              XHELP0523
+               HILIGHT=REVERSE                                          HELP0524
+        DFHMDF POS=(05,087),LENGTH=000,ATTRB=(ASKIP,NORM),             XHELP0525
+               COLOR=GREEN                                              HELP0526
+        DFHMDF POS=(06,046),LENGTH=002,ATTRB=(ASKIP,NORM),             XHELP0527
+               XINIT=4040,                                             XHELP0528
+               COLOR=RED,                                              XHELP0529
+               HILIGHT=REVERSE                                          HELP0530
+        DFHMDF POS=(06,084),LENGTH=002,ATTRB=(ASKIP,NORM),             XHELP0531
+               XINIT=4040,                                             XHELP0532
+               COLOR=RED,                                              XHELP0533
+               HILIGHT=REVERSE                                          HELP0534
+        DFHMDF POS=(06,087),LENGTH=000,ATTRB=(ASKIP,NORM),             XHELP0535
+               COLOR=GREEN                                              HELP0536
+        DFHMDF POS=(07,046),LENGTH=002,ATTRB=(ASKIP,NORM),             XHELP0537
+               XINIT=4040,                                             XHELP0538
+               COLOR=RED,                                              XHELP0539
+               HILIGHT=REVERSE                                          HELP0540
+        DFHMDF POS=(07,084),LENGTH=002,ATTRB=(ASKIP,NORM),             XHELP0541
+               XINIT=4040,                                             XHELP0542
+               COLOR=RED,                                              XHELP0543
+               HILIGHT=REVERSE                                          HELP0544
+        DFHMDF POS=(07,087),LENGTH=000,ATTRB=(ASKIP,NORM),             XHELP0545
+               COLOR=GREEN                                              HELP0546
+        DFHMDF POS=(08,046),LENGTH=002,ATTRB=(ASKIP,NORM),             XHELP0547
+               XINIT=4040,                                             XHELP0548
+               COLOR=RED,                                              XHELP0549
+               HILIGHT=REVERSE                                          HELP0550
+        DFHMDF POS=(08,084),LENGTH=002,ATTRB=(ASKIP,NORM),             XHELP0551
+               XINIT=4040,                                             XHELP0552
+               COLOR=RED,                                              XHELP0553
+               HILIGHT=REVERSE                                          HELP0554
+        DFHMDF POS=(08,087),LENGTH=000,ATTRB=(ASKIP,NORM),             XHELP0555
+               COLOR=GREEN                                              HELP0556
+        DFHMDF POS=(09,046),LENGTH=002,ATTRB=(ASKIP,NORM),             XHELP0557
+               XINIT=4040,                                             XHELP0558
+               COLOR=RED,                                              XHELP0559
+               HILIGHT=REVERSE                                          HELP0560
+        DFHMDF POS=(09,084),LENGTH=002,ATTRB=(ASKIP,NORM),             XHELP0561
+               XINIT=4040,                                             XHELP0562
+               COLOR=RED,                                              XHELP0563
+               HILIGHT=REVERSE                                          HELP0564
+        DFHMDF POS=(09,087),LENGTH=000,ATTRB=(ASKIP,NORM),             XHELP0565
+               COLOR=GREEN                                              HELP0566
+        DFHMDF POS=(10,046),LENGTH=002,ATTRB=(ASKIP,NORM),             XHELP0567
+               XINIT=4040,                                             XHELP0568
+               COLOR=RED,                                              XHELP0569
+               HILIGHT=REVERSE                                          HELP0570
+        DFHMDF POS=(10,084),LENGTH=002,ATTRB=(ASKIP,NORM),             XHELP0571
+               XINIT=4040,                                             XHELP0572
+               COLOR=RED,                                              XHELP0573
+               HILIGHT=REVERSE                                          HELP0574
+        DFHMDF POS=(10,087),LENGTH=000,ATTRB=(ASKIP,NORM),             XHELP0575
+               COLOR=GREEN                                              HELP0576
+        DFHMDF POS=(11,046),LENGTH=040,ATTRB=(ASKIP,NORM),             XHELP0577
+               INITIAL='    Press ENTER to update and exit.     ',     XHELP0578
+               COLOR=RED,                                              XHELP0579
+               HILIGHT=REVERSE                                          HELP0580
+        DFHMDF POS=(11,087),LENGTH=000,ATTRB=(ASKIP,NORM),             XHELP0581
+               COLOR=GREEN                                              HELP0582
+*                                                                       HELP0583
+        PRINT  ON,GEN                                                   HELP0584
+        TITLE  'W A I T W I N   ( 0 1 . 0 1 )   -   G E N E R A T I N GXHELP0585
+                . . .   M E S S A G E   W I N D O W         '           HELP0586
+WAITWIN DFHMDI SIZE=(27,132)                                            HELP0587
+        PRINT  ON,NOGEN                                                 HELP0588
+        DFHMDF POS=(11,055),LENGTH=021,ATTRB=(ASKIP,NORM),             XHELP0589
+               XINIT=404040404040404040404040404040404040404040,       XHELP0590
+               COLOR=TURQUOISE,                                        XHELP0591
+               HILIGHT=REVERSE                                          HELP0592
+        DFHMDF POS=(11,077),LENGTH=000,ATTRB=(ASKIP,NORM)               HELP0593
+        DFHMDF POS=(12,055),LENGTH=002,ATTRB=(ASKIP,NORM),             XHELP0594
+               XINIT=4040,                                             XHELP0595
+               COLOR=TURQUOISE,                                        XHELP0596
+               HILIGHT=REVERSE                                          HELP0597
+        DFHMDF POS=(12,058),LENGTH=015,ATTRB=(ASKIP,NORM),             XHELP0598
+               XINIT=404040404040404040404040404040                     HELP0599
+        DFHMDF POS=(12,074),LENGTH=002,ATTRB=(ASKIP,NORM),             XHELP0600
+               XINIT=4040,                                             XHELP0601
+               COLOR=TURQUOISE,                                        XHELP0602
+               HILIGHT=REVERSE                                          HELP0603
+        DFHMDF POS=(12,077),LENGTH=000,ATTRB=(ASKIP,NORM)               HELP0604
+        DFHMDF POS=(13,055),LENGTH=002,ATTRB=(ASKIP,NORM),             XHELP0605
+               XINIT=4040,                                             XHELP0606
+               COLOR=TURQUOISE,                                        XHELP0607
+               HILIGHT=REVERSE                                          HELP0608
+* CBLDNM LABEL=WAIT-MESSAGE                                             HELP0609
+F051642 DFHMDF POS=(13,058),LENGTH=015,ATTRB=(ASKIP,BRT),              XHELP0610
+               INITIAL='Generating...',                                XHELP0611
+               COLOR=RED,                                              XHELP0612
+               HILIGHT=BLINK                                            HELP0613
+        DFHMDF POS=(13,074),LENGTH=002,ATTRB=(ASKIP,NORM),             XHELP0614
+               XINIT=4040,                                             XHELP0615
+               COLOR=TURQUOISE,                                        XHELP0616
+               HILIGHT=REVERSE                                          HELP0617
+        DFHMDF POS=(13,077),LENGTH=000,ATTRB=(ASKIP,NORM)               HELP0618
+        DFHMDF POS=(14,055),LENGTH=002,ATTRB=(ASKIP,NORM),             XHELP0619
+               XINIT=4040,                                             XHELP0620
+               COLOR=TURQUOISE,                                        XHELP0621
+               HILIGHT=REVERSE                                          HELP0622
+        DFHMDF POS=(14,058),LENGTH=015,ATTRB=(ASKIP,NORM),             XHELP0623
+               XINIT=404040404040404040404040404040                     HELP0624
+        DFHMDF POS=(14,074),LENGTH=002,ATTRB=(ASKIP,NORM),             XHELP0625
+               XINIT=4040,                                             XHELP0626
+               COLOR=TURQUOISE,                                        XHELP0627
+               HILIGHT=REVERSE                                          HELP0628
+        DFHMDF POS=(14,077),LENGTH=000,ATTRB=(ASKIP,NORM)               HELP0629
+        DFHMDF POS=(15,055),LENGTH=021,ATTRB=(ASKIP,NORM),             XHELP0630
+               XINIT=404040404040404040404040404040404040404040,       XHELP0631
+               COLOR=TURQUOISE,                                        XHELP0632
+               HILIGHT=REVERSE                                          HELP0633
+        DFHMDF POS=(15,077),LENGTH=000,ATTRB=(ASKIP,NORM)               HELP0634
+*                                                                       HELP0635
+        PRINT  ON,GEN                                                   HELP0636
+        TITLE  'L I S T M A P   ( 0 1 . 3 4 )   -   C I C S   H E L P  XHELP0637
+                L I S T   M A P                             '           HELP0638
+LISTMAP DFHMDI SIZE=(27,132)                                            HELP0639
+*              ROW=05,THRU=05,OCCURS=20                                 HELP0640
+        PRINT  ON,NOGEN                                                 HELP0641
+        DFHMDF POS=(01,001),LENGTH=008,ATTRB=(ASKIP,NORM),             XHELP0642
+               INITIAL='HELP    ',                                     XHELP0643
+               COLOR=BLUE                                               HELP0644
+* CBLDNM LABEL=LIST-COMPANY                                             HELP0645
+F060046 DFHMDF POS=(01,046),LENGTH=040,ATTRB=(ASKIP,BRT),              XHELP0646
+               COLOR=TURQUOISE                                          HELP0647
+* CBLDNM LABEL=LIST-SYSDATE                                             HELP0648
+F060121 DFHMDF POS=(01,121),LENGTH=010,ATTRB=(ASKIP,NORM),             XHELP0649
+               INITIAL='mm/dd/yyyy',                                   XHELP0650
+               COLOR=BLUE                                               HELP0651
+* CBLDNM LABEL=LIST-NETNAME                                             HELP0652
+F060133 DFHMDF POS=(02,001),LENGTH=010,ATTRB=(ASKIP,NORM),             XHELP0653
+               COLOR=BLUE                                               HELP0654
+* CBLDNM LABEL=LIST-TITLE                                               HELP0655
+F060178 DFHMDF POS=(02,046),LENGTH=040,ATTRB=(ASKIP,BRT),              XHELP0656
+               INITIAL='           CICS Help Listing '                  HELP0657
+* CBLDNM LABEL=LIST-SYSTIME                                             HELP0658
+F060253 DFHMDF POS=(02,121),LENGTH=010,ATTRB=(ASKIP,NORM),             XHELP0659
+               INITIAL='hh:mm xx',                                     XHELP0660
+               COLOR=BLUE                                               HELP0661
+        DFHMDF POS=(03,001),LENGTH=001,ATTRB=(PROT,BRT),INITIAL=' '     HELP0662
+        DFHMDF POS=(04,001),LENGTH=001,ATTRB=(ASKIP,NORM),             XHELP0663
+               INITIAL='O',                                            XHELP0664
+               COLOR=TURQUOISE,                                        XHELP0665
+               HILIGHT=UNDERLINE                                        HELP0666
+        DFHMDF POS=(04,003),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0667
+        DFHMDF POS=(04,004),LENGTH=004,ATTRB=(ASKIP,NORM),             XHELP0668
+               INITIAL='Tran',                                         XHELP0669
+               COLOR=TURQUOISE,                                        XHELP0670
+               HILIGHT=UNDERLINE                                        HELP0671
+        DFHMDF POS=(04,009),LENGTH=008,ATTRB=(ASKIP,NORM),             XHELP0672
+               INITIAL='  Name  ',                                     XHELP0673
+               COLOR=TURQUOISE,                                        XHELP0674
+               HILIGHT=UNDERLINE                                        HELP0675
+        DFHMDF POS=(04,018),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0676
+        DFHMDF POS=(04,019),LENGTH=003,ATTRB=(ASKIP,NORM),             XHELP0677
+               INITIAL='Pgs',                                          XHELP0678
+               COLOR=TURQUOISE,                                        XHELP0679
+               HILIGHT=UNDERLINE                                        HELP0680
+        DFHMDF POS=(04,023),LENGTH=001,ATTRB=(ASKIP,BRT),INITIAL=' '    HELP0681
+        DFHMDF POS=(04,028),LENGTH=001,ATTRB=(ASKIP,NORM),             XHELP0682
+               INITIAL='O',                                            XHELP0683
+               COLOR=TURQUOISE,                                        XHELP0684
+               HILIGHT=UNDERLINE                                        HELP0685
+        DFHMDF POS=(04,030),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0686
+        DFHMDF POS=(04,031),LENGTH=004,ATTRB=(ASKIP,NORM),             XHELP0687
+               INITIAL='Tran',                                         XHELP0688
+               COLOR=TURQUOISE,                                        XHELP0689
+               HILIGHT=UNDERLINE                                        HELP0690
+        DFHMDF POS=(04,036),LENGTH=008,ATTRB=(ASKIP,NORM),             XHELP0691
+               INITIAL='  Name  ',                                     XHELP0692
+               COLOR=TURQUOISE,                                        XHELP0693
+               HILIGHT=UNDERLINE                                        HELP0694
+        DFHMDF POS=(04,045),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0695
+        DFHMDF POS=(04,046),LENGTH=003,ATTRB=(ASKIP,NORM),             XHELP0696
+               INITIAL='Pgs',                                          XHELP0697
+               COLOR=TURQUOISE,                                        XHELP0698
+               HILIGHT=UNDERLINE                                        HELP0699
+        DFHMDF POS=(04,050),LENGTH=001,ATTRB=(ASKIP,BRT),INITIAL=' '    HELP0700
+        DFHMDF POS=(04,055),LENGTH=001,ATTRB=(ASKIP,NORM),             XHELP0701
+               INITIAL='O',                                            XHELP0702
+               COLOR=TURQUOISE,                                        XHELP0703
+               HILIGHT=UNDERLINE                                        HELP0704
+        DFHMDF POS=(04,057),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0705
+        DFHMDF POS=(04,058),LENGTH=004,ATTRB=(ASKIP,NORM),             XHELP0706
+               INITIAL='Tran',                                         XHELP0707
+               COLOR=TURQUOISE,                                        XHELP0708
+               HILIGHT=UNDERLINE                                        HELP0709
+        DFHMDF POS=(04,063),LENGTH=008,ATTRB=(ASKIP,NORM),             XHELP0710
+               INITIAL='  Name  ',                                     XHELP0711
+               COLOR=TURQUOISE,                                        XHELP0712
+               HILIGHT=UNDERLINE                                        HELP0713
+        DFHMDF POS=(04,072),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0714
+        DFHMDF POS=(04,073),LENGTH=003,ATTRB=(ASKIP,NORM),             XHELP0715
+               INITIAL='Pgs',                                          XHELP0716
+               COLOR=TURQUOISE,                                        XHELP0717
+               HILIGHT=UNDERLINE                                        HELP0718
+        DFHMDF POS=(04,077),LENGTH=001,ATTRB=(ASKIP,BRT),INITIAL=' '    HELP0719
+        DFHMDF POS=(04,082),LENGTH=001,ATTRB=(ASKIP,NORM),             XHELP0720
+               INITIAL='O',                                            XHELP0721
+               COLOR=TURQUOISE,                                        XHELP0722
+               HILIGHT=UNDERLINE                                        HELP0723
+        DFHMDF POS=(04,084),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0724
+        DFHMDF POS=(04,085),LENGTH=004,ATTRB=(ASKIP,NORM),             XHELP0725
+               INITIAL='Tran',                                         XHELP0726
+               COLOR=TURQUOISE,                                        XHELP0727
+               HILIGHT=UNDERLINE                                        HELP0728
+        DFHMDF POS=(04,090),LENGTH=008,ATTRB=(ASKIP,NORM),             XHELP0729
+               INITIAL='  Name  ',                                     XHELP0730
+               COLOR=TURQUOISE,                                        XHELP0731
+               HILIGHT=UNDERLINE                                        HELP0732
+        DFHMDF POS=(04,099),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0733
+        DFHMDF POS=(04,100),LENGTH=003,ATTRB=(ASKIP,NORM),             XHELP0734
+               INITIAL='Pgs',                                          XHELP0735
+               COLOR=TURQUOISE,                                        XHELP0736
+               HILIGHT=UNDERLINE                                        HELP0737
+        DFHMDF POS=(04,104),LENGTH=001,ATTRB=(ASKIP,BRT),INITIAL=' '    HELP0738
+        DFHMDF POS=(04,109),LENGTH=001,ATTRB=(ASKIP,NORM),             XHELP0739
+               INITIAL='O',                                            XHELP0740
+               COLOR=TURQUOISE,                                        XHELP0741
+               HILIGHT=UNDERLINE                                        HELP0742
+        DFHMDF POS=(04,111),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0743
+        DFHMDF POS=(04,112),LENGTH=004,ATTRB=(ASKIP,NORM),             XHELP0744
+               INITIAL='Tran',                                         XHELP0745
+               COLOR=TURQUOISE,                                        XHELP0746
+               HILIGHT=UNDERLINE                                        HELP0747
+        DFHMDF POS=(04,117),LENGTH=008,ATTRB=(ASKIP,NORM),             XHELP0748
+               INITIAL='  Name  ',                                     XHELP0749
+               COLOR=TURQUOISE,                                        XHELP0750
+               HILIGHT=UNDERLINE                                        HELP0751
+        DFHMDF POS=(04,126),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0752
+        DFHMDF POS=(04,127),LENGTH=003,ATTRB=(ASKIP,NORM),             XHELP0753
+               INITIAL='Pgs',                                          XHELP0754
+               COLOR=TURQUOISE,                                        XHELP0755
+               HILIGHT=UNDERLINE                                        HELP0756
+        DFHMDF POS=(04,131),LENGTH=001,ATTRB=(ASKIP,BRT),INITIAL=' '    HELP0757
+* CBLDNM LABEL=LIST-SELECT-1                                            HELP0758
+F060529 DFHMDF POS=(05,001),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP0759
+               COLOR=GREEN,                                            XHELP0760
+               HILIGHT=UNDERLINE                                        HELP0761
+        DFHMDF POS=(05,003),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0762
+* CBLDNM LABEL=LIST-HELP-TRAN-1                                         HELP0763
+F060532 DFHMDF POS=(05,004),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP0764
+               COLOR=YELLOW                                             HELP0765
+* CBLDNM LABEL=LIST-HELP-NAME-1                                         HELP0766
+F060537 DFHMDF POS=(05,009),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP0767
+               COLOR=YELLOW                                             HELP0768
+        DFHMDF POS=(05,018),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0769
+* CBLDNM LABEL=LIST-HELP-PTOT-1                                         HELP0770
+F060547 DFHMDF POS=(05,019),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP0771
+               PICOUT='ZZ9',                                           XHELP0772
+               COLOR=BLUE                                               HELP0773
+* CBLDNM LABEL=LIST-SELECT-2                                            HELP0774
+F060556 DFHMDF POS=(05,028),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP0775
+               COLOR=GREEN,                                            XHELP0776
+               HILIGHT=UNDERLINE                                        HELP0777
+        DFHMDF POS=(05,030),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0778
+* CBLDNM LABEL=LIST-HELP-TRAN-2                                         HELP0779
+F060559 DFHMDF POS=(05,031),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP0780
+               COLOR=YELLOW                                             HELP0781
+* CBLDNM LABEL=LIST-HELP-NAME-2                                         HELP0782
+F060564 DFHMDF POS=(05,036),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP0783
+               COLOR=YELLOW                                             HELP0784
+        DFHMDF POS=(05,045),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0785
+* CBLDNM LABEL=LIST-HELP-PTOT-2                                         HELP0786
+F060574 DFHMDF POS=(05,046),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP0787
+               PICOUT='ZZZ',                                           XHELP0788
+               COLOR=BLUE                                               HELP0789
+* CBLDNM LABEL=LIST-SELECT-3                                            HELP0790
+F060583 DFHMDF POS=(05,055),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP0791
+               COLOR=GREEN,                                            XHELP0792
+               HILIGHT=UNDERLINE                                        HELP0793
+        DFHMDF POS=(05,057),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0794
+* CBLDNM LABEL=LIST-HELP-TRAN-3                                         HELP0795
+F060586 DFHMDF POS=(05,058),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP0796
+               COLOR=YELLOW                                             HELP0797
+* CBLDNM LABEL=LIST-HELP-NAME-3                                         HELP0798
+F060591 DFHMDF POS=(05,063),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP0799
+               COLOR=YELLOW                                             HELP0800
+        DFHMDF POS=(05,072),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0801
+* CBLDNM LABEL=LIST-HELP-PTOT-3                                         HELP0802
+F060601 DFHMDF POS=(05,073),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP0803
+               PICOUT='ZZZ',                                           XHELP0804
+               COLOR=BLUE                                               HELP0805
+* CBLDNM LABEL=LIST-SELECT-4                                            HELP0806
+F060610 DFHMDF POS=(05,082),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP0807
+               COLOR=GREEN,                                            XHELP0808
+               HILIGHT=UNDERLINE                                        HELP0809
+        DFHMDF POS=(05,084),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0810
+* CBLDNM LABEL=LIST-HELP-TRAN-4                                         HELP0811
+F060613 DFHMDF POS=(05,085),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP0812
+               COLOR=YELLOW                                             HELP0813
+* CBLDNM LABEL=LIST-HELP-NAME-4                                         HELP0814
+F060618 DFHMDF POS=(05,090),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP0815
+               COLOR=YELLOW                                             HELP0816
+        DFHMDF POS=(05,099),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0817
+* CBLDNM LABEL=LIST-HELP-PTOT-4                                         HELP0818
+F060628 DFHMDF POS=(05,100),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP0819
+               PICOUT='ZZZ',                                           XHELP0820
+               COLOR=BLUE                                               HELP0821
+* CBLDNM LABEL=LIST-SELECT-5                                            HELP0822
+F060637 DFHMDF POS=(05,109),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP0823
+               COLOR=GREEN,                                            XHELP0824
+               HILIGHT=UNDERLINE                                        HELP0825
+        DFHMDF POS=(05,111),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0826
+* CBLDNM LABEL=LIST-HELP-TRAN-5                                         HELP0827
+F060640 DFHMDF POS=(05,112),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP0828
+               COLOR=YELLOW                                             HELP0829
+* CBLDNM LABEL=LIST-HELP-NAME-5                                         HELP0830
+F060645 DFHMDF POS=(05,117),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP0831
+               COLOR=YELLOW                                             HELP0832
+        DFHMDF POS=(05,126),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0833
+* CBLDNM LABEL=LIST-HELP-PTOT-5                                         HELP0834
+F060655 DFHMDF POS=(05,127),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP0835
+               PICOUT='ZZZ',                                           XHELP0836
+               COLOR=BLUE                                               HELP0837
+* CBLDNM LABEL=LIST-SELECT-1                                            HELP0838
+F060661 DFHMDF POS=(06,001),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP0839
+               COLOR=GREEN,                                            XHELP0840
+               HILIGHT=UNDERLINE                                        HELP0841
+        DFHMDF POS=(06,003),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0842
+* CBLDNM LABEL=LIST-HELP-TRAN-1                                         HELP0843
+F060664 DFHMDF POS=(06,004),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP0844
+               COLOR=YELLOW                                             HELP0845
+* CBLDNM LABEL=LIST-HELP-NAME-1                                         HELP0846
+F060669 DFHMDF POS=(06,009),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP0847
+               COLOR=YELLOW                                             HELP0848
+        DFHMDF POS=(06,018),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0849
+* CBLDNM LABEL=LIST-HELP-PTOT-1                                         HELP0850
+F060679 DFHMDF POS=(06,019),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP0851
+               PICOUT='ZZ9',                                           XHELP0852
+               COLOR=BLUE                                               HELP0853
+* CBLDNM LABEL=LIST-SELECT-2                                            HELP0854
+F060688 DFHMDF POS=(06,028),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP0855
+               COLOR=GREEN,                                            XHELP0856
+               HILIGHT=UNDERLINE                                        HELP0857
+        DFHMDF POS=(06,030),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0858
+* CBLDNM LABEL=LIST-HELP-TRAN-2                                         HELP0859
+F060691 DFHMDF POS=(06,031),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP0860
+               COLOR=YELLOW                                             HELP0861
+* CBLDNM LABEL=LIST-HELP-NAME-2                                         HELP0862
+F060696 DFHMDF POS=(06,036),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP0863
+               COLOR=YELLOW                                             HELP0864
+        DFHMDF POS=(06,045),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0865
+* CBLDNM LABEL=LIST-HELP-PTOT-2                                         HELP0866
+F060706 DFHMDF POS=(06,046),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP0867
+               PICOUT='ZZZ',                                           XHELP0868
+               COLOR=BLUE                                               HELP0869
+* CBLDNM LABEL=LIST-SELECT-3                                            HELP0870
+F060715 DFHMDF POS=(06,055),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP0871
+               COLOR=GREEN,                                            XHELP0872
+               HILIGHT=UNDERLINE                                        HELP0873
+        DFHMDF POS=(06,057),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0874
+* CBLDNM LABEL=LIST-HELP-TRAN-3                                         HELP0875
+F060718 DFHMDF POS=(06,058),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP0876
+               COLOR=YELLOW                                             HELP0877
+* CBLDNM LABEL=LIST-HELP-NAME-3                                         HELP0878
+F060723 DFHMDF POS=(06,063),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP0879
+               COLOR=YELLOW                                             HELP0880
+        DFHMDF POS=(06,072),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0881
+* CBLDNM LABEL=LIST-HELP-PTOT-3                                         HELP0882
+F060733 DFHMDF POS=(06,073),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP0883
+               PICOUT='ZZZ',                                           XHELP0884
+               COLOR=BLUE                                               HELP0885
+* CBLDNM LABEL=LIST-SELECT-4                                            HELP0886
+F060742 DFHMDF POS=(06,082),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP0887
+               COLOR=GREEN,                                            XHELP0888
+               HILIGHT=UNDERLINE                                        HELP0889
+        DFHMDF POS=(06,084),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0890
+* CBLDNM LABEL=LIST-HELP-TRAN-4                                         HELP0891
+F060745 DFHMDF POS=(06,085),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP0892
+               COLOR=YELLOW                                             HELP0893
+* CBLDNM LABEL=LIST-HELP-NAME-4                                         HELP0894
+F060750 DFHMDF POS=(06,090),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP0895
+               COLOR=YELLOW                                             HELP0896
+        DFHMDF POS=(06,099),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0897
+* CBLDNM LABEL=LIST-HELP-PTOT-4                                         HELP0898
+F060760 DFHMDF POS=(06,100),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP0899
+               PICOUT='ZZZ',                                           XHELP0900
+               COLOR=BLUE                                               HELP0901
+* CBLDNM LABEL=LIST-SELECT-5                                            HELP0902
+F060769 DFHMDF POS=(06,109),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP0903
+               COLOR=GREEN,                                            XHELP0904
+               HILIGHT=UNDERLINE                                        HELP0905
+        DFHMDF POS=(06,111),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0906
+* CBLDNM LABEL=LIST-HELP-TRAN-5                                         HELP0907
+F060772 DFHMDF POS=(06,112),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP0908
+               COLOR=YELLOW                                             HELP0909
+* CBLDNM LABEL=LIST-HELP-NAME-5                                         HELP0910
+F060777 DFHMDF POS=(06,117),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP0911
+               COLOR=YELLOW                                             HELP0912
+        DFHMDF POS=(06,126),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0913
+* CBLDNM LABEL=LIST-HELP-PTOT-5                                         HELP0914
+F060787 DFHMDF POS=(06,127),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP0915
+               PICOUT='ZZZ',                                           XHELP0916
+               COLOR=BLUE                                               HELP0917
+* CBLDNM LABEL=LIST-SELECT-1                                            HELP0918
+F060793 DFHMDF POS=(07,001),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP0919
+               COLOR=GREEN,                                            XHELP0920
+               HILIGHT=UNDERLINE                                        HELP0921
+        DFHMDF POS=(07,003),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0922
+* CBLDNM LABEL=LIST-HELP-TRAN-1                                         HELP0923
+F060796 DFHMDF POS=(07,004),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP0924
+               COLOR=YELLOW                                             HELP0925
+* CBLDNM LABEL=LIST-HELP-NAME-1                                         HELP0926
+F060801 DFHMDF POS=(07,009),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP0927
+               COLOR=YELLOW                                             HELP0928
+        DFHMDF POS=(07,018),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0929
+* CBLDNM LABEL=LIST-HELP-PTOT-1                                         HELP0930
+F060811 DFHMDF POS=(07,019),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP0931
+               PICOUT='ZZ9',                                           XHELP0932
+               COLOR=BLUE                                               HELP0933
+* CBLDNM LABEL=LIST-SELECT-2                                            HELP0934
+F060820 DFHMDF POS=(07,028),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP0935
+               COLOR=GREEN,                                            XHELP0936
+               HILIGHT=UNDERLINE                                        HELP0937
+        DFHMDF POS=(07,030),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0938
+* CBLDNM LABEL=LIST-HELP-TRAN-2                                         HELP0939
+F060823 DFHMDF POS=(07,031),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP0940
+               COLOR=YELLOW                                             HELP0941
+* CBLDNM LABEL=LIST-HELP-NAME-2                                         HELP0942
+F060828 DFHMDF POS=(07,036),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP0943
+               COLOR=YELLOW                                             HELP0944
+        DFHMDF POS=(07,045),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0945
+* CBLDNM LABEL=LIST-HELP-PTOT-2                                         HELP0946
+F060838 DFHMDF POS=(07,046),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP0947
+               PICOUT='ZZZ',                                           XHELP0948
+               COLOR=BLUE                                               HELP0949
+* CBLDNM LABEL=LIST-SELECT-3                                            HELP0950
+F060847 DFHMDF POS=(07,055),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP0951
+               COLOR=GREEN,                                            XHELP0952
+               HILIGHT=UNDERLINE                                        HELP0953
+        DFHMDF POS=(07,057),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0954
+* CBLDNM LABEL=LIST-HELP-TRAN-3                                         HELP0955
+F060850 DFHMDF POS=(07,058),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP0956
+               COLOR=YELLOW                                             HELP0957
+* CBLDNM LABEL=LIST-HELP-NAME-3                                         HELP0958
+F060855 DFHMDF POS=(07,063),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP0959
+               COLOR=YELLOW                                             HELP0960
+        DFHMDF POS=(07,072),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0961
+* CBLDNM LABEL=LIST-HELP-PTOT-3                                         HELP0962
+F060865 DFHMDF POS=(07,073),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP0963
+               PICOUT='ZZZ',                                           XHELP0964
+               COLOR=BLUE                                               HELP0965
+* CBLDNM LABEL=LIST-SELECT-4                                            HELP0966
+F060874 DFHMDF POS=(07,082),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP0967
+               COLOR=GREEN,                                            XHELP0968
+               HILIGHT=UNDERLINE                                        HELP0969
+        DFHMDF POS=(07,084),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0970
+* CBLDNM LABEL=LIST-HELP-TRAN-4                                         HELP0971
+F060877 DFHMDF POS=(07,085),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP0972
+               COLOR=YELLOW                                             HELP0973
+* CBLDNM LABEL=LIST-HELP-NAME-4                                         HELP0974
+F060882 DFHMDF POS=(07,090),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP0975
+               COLOR=YELLOW                                             HELP0976
+        DFHMDF POS=(07,099),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0977
+* CBLDNM LABEL=LIST-HELP-PTOT-4                                         HELP0978
+F060892 DFHMDF POS=(07,100),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP0979
+               PICOUT='ZZZ',                                           XHELP0980
+               COLOR=BLUE                                               HELP0981
+* CBLDNM LABEL=LIST-SELECT-5                                            HELP0982
+F060901 DFHMDF POS=(07,109),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP0983
+               COLOR=GREEN,                                            XHELP0984
+               HILIGHT=UNDERLINE                                        HELP0985
+        DFHMDF POS=(07,111),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0986
+* CBLDNM LABEL=LIST-HELP-TRAN-5                                         HELP0987
+F060904 DFHMDF POS=(07,112),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP0988
+               COLOR=YELLOW                                             HELP0989
+* CBLDNM LABEL=LIST-HELP-NAME-5                                         HELP0990
+F060909 DFHMDF POS=(07,117),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP0991
+               COLOR=YELLOW                                             HELP0992
+        DFHMDF POS=(07,126),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP0993
+* CBLDNM LABEL=LIST-HELP-PTOT-5                                         HELP0994
+F060919 DFHMDF POS=(07,127),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP0995
+               PICOUT='ZZZ',                                           XHELP0996
+               COLOR=BLUE                                               HELP0997
+* CBLDNM LABEL=LIST-SELECT-1                                            HELP0998
+F060925 DFHMDF POS=(08,001),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP0999
+               COLOR=GREEN,                                            XHELP1000
+               HILIGHT=UNDERLINE                                        HELP1001
+        DFHMDF POS=(08,003),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1002
+* CBLDNM LABEL=LIST-HELP-TRAN-1                                         HELP1003
+F060928 DFHMDF POS=(08,004),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP1004
+               COLOR=YELLOW                                             HELP1005
+* CBLDNM LABEL=LIST-HELP-NAME-1                                         HELP1006
+F060933 DFHMDF POS=(08,009),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP1007
+               COLOR=YELLOW                                             HELP1008
+        DFHMDF POS=(08,018),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1009
+* CBLDNM LABEL=LIST-HELP-PTOT-1                                         HELP1010
+F060943 DFHMDF POS=(08,019),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP1011
+               PICOUT='ZZ9',                                           XHELP1012
+               COLOR=BLUE                                               HELP1013
+* CBLDNM LABEL=LIST-SELECT-2                                            HELP1014
+F060952 DFHMDF POS=(08,028),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP1015
+               COLOR=GREEN,                                            XHELP1016
+               HILIGHT=UNDERLINE                                        HELP1017
+        DFHMDF POS=(08,030),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1018
+* CBLDNM LABEL=LIST-HELP-TRAN-2                                         HELP1019
+F060955 DFHMDF POS=(08,031),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP1020
+               COLOR=YELLOW                                             HELP1021
+* CBLDNM LABEL=LIST-HELP-NAME-2                                         HELP1022
+F060960 DFHMDF POS=(08,036),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP1023
+               COLOR=YELLOW                                             HELP1024
+        DFHMDF POS=(08,045),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1025
+* CBLDNM LABEL=LIST-HELP-PTOT-2                                         HELP1026
+F060970 DFHMDF POS=(08,046),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP1027
+               PICOUT='ZZZ',                                           XHELP1028
+               COLOR=BLUE                                               HELP1029
+* CBLDNM LABEL=LIST-SELECT-3                                            HELP1030
+F060979 DFHMDF POS=(08,055),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP1031
+               COLOR=GREEN,                                            XHELP1032
+               HILIGHT=UNDERLINE                                        HELP1033
+        DFHMDF POS=(08,057),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1034
+* CBLDNM LABEL=LIST-HELP-TRAN-3                                         HELP1035
+F060982 DFHMDF POS=(08,058),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP1036
+               COLOR=YELLOW                                             HELP1037
+* CBLDNM LABEL=LIST-HELP-NAME-3                                         HELP1038
+F060987 DFHMDF POS=(08,063),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP1039
+               COLOR=YELLOW                                             HELP1040
+        DFHMDF POS=(08,072),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1041
+* CBLDNM LABEL=LIST-HELP-PTOT-3                                         HELP1042
+F060997 DFHMDF POS=(08,073),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP1043
+               PICOUT='ZZZ',                                           XHELP1044
+               COLOR=BLUE                                               HELP1045
+* CBLDNM LABEL=LIST-SELECT-4                                            HELP1046
+F061006 DFHMDF POS=(08,082),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP1047
+               COLOR=GREEN,                                            XHELP1048
+               HILIGHT=UNDERLINE                                        HELP1049
+        DFHMDF POS=(08,084),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1050
+* CBLDNM LABEL=LIST-HELP-TRAN-4                                         HELP1051
+F061009 DFHMDF POS=(08,085),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP1052
+               COLOR=YELLOW                                             HELP1053
+* CBLDNM LABEL=LIST-HELP-NAME-4                                         HELP1054
+F061014 DFHMDF POS=(08,090),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP1055
+               COLOR=YELLOW                                             HELP1056
+        DFHMDF POS=(08,099),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1057
+* CBLDNM LABEL=LIST-HELP-PTOT-4                                         HELP1058
+F061024 DFHMDF POS=(08,100),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP1059
+               PICOUT='ZZZ',                                           XHELP1060
+               COLOR=BLUE                                               HELP1061
+* CBLDNM LABEL=LIST-SELECT-5                                            HELP1062
+F061033 DFHMDF POS=(08,109),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP1063
+               COLOR=GREEN,                                            XHELP1064
+               HILIGHT=UNDERLINE                                        HELP1065
+        DFHMDF POS=(08,111),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1066
+* CBLDNM LABEL=LIST-HELP-TRAN-5                                         HELP1067
+F061036 DFHMDF POS=(08,112),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP1068
+               COLOR=YELLOW                                             HELP1069
+* CBLDNM LABEL=LIST-HELP-NAME-5                                         HELP1070
+F061041 DFHMDF POS=(08,117),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP1071
+               COLOR=YELLOW                                             HELP1072
+        DFHMDF POS=(08,126),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1073
+* CBLDNM LABEL=LIST-HELP-PTOT-5                                         HELP1074
+F061051 DFHMDF POS=(08,127),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP1075
+               PICOUT='ZZZ',                                           XHELP1076
+               COLOR=BLUE                                               HELP1077
+* CBLDNM LABEL=LIST-SELECT-1                                            HELP1078
+F061057 DFHMDF POS=(09,001),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP1079
+               COLOR=GREEN,                                            XHELP1080
+               HILIGHT=UNDERLINE                                        HELP1081
+        DFHMDF POS=(09,003),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1082
+* CBLDNM LABEL=LIST-HELP-TRAN-1                                         HELP1083
+F061060 DFHMDF POS=(09,004),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP1084
+               COLOR=YELLOW                                             HELP1085
+* CBLDNM LABEL=LIST-HELP-NAME-1                                         HELP1086
+F061065 DFHMDF POS=(09,009),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP1087
+               COLOR=YELLOW                                             HELP1088
+        DFHMDF POS=(09,018),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1089
+* CBLDNM LABEL=LIST-HELP-PTOT-1                                         HELP1090
+F061075 DFHMDF POS=(09,019),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP1091
+               PICOUT='ZZ9',                                           XHELP1092
+               COLOR=BLUE                                               HELP1093
+* CBLDNM LABEL=LIST-SELECT-2                                            HELP1094
+F061084 DFHMDF POS=(09,028),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP1095
+               COLOR=GREEN,                                            XHELP1096
+               HILIGHT=UNDERLINE                                        HELP1097
+        DFHMDF POS=(09,030),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1098
+* CBLDNM LABEL=LIST-HELP-TRAN-2                                         HELP1099
+F061087 DFHMDF POS=(09,031),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP1100
+               COLOR=YELLOW                                             HELP1101
+* CBLDNM LABEL=LIST-HELP-NAME-2                                         HELP1102
+F061092 DFHMDF POS=(09,036),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP1103
+               COLOR=YELLOW                                             HELP1104
+        DFHMDF POS=(09,045),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1105
+* CBLDNM LABEL=LIST-HELP-PTOT-2                                         HELP1106
+F061102 DFHMDF POS=(09,046),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP1107
+               PICOUT='ZZZ',                                           XHELP1108
+               COLOR=BLUE                                               HELP1109
+* CBLDNM LABEL=LIST-SELECT-3                                            HELP1110
+F061111 DFHMDF POS=(09,055),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP1111
+               COLOR=GREEN,                                            XHELP1112
+               HILIGHT=UNDERLINE                                        HELP1113
+        DFHMDF POS=(09,057),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1114
+* CBLDNM LABEL=LIST-HELP-TRAN-3                                         HELP1115
+F061114 DFHMDF POS=(09,058),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP1116
+               COLOR=YELLOW                                             HELP1117
+* CBLDNM LABEL=LIST-HELP-NAME-3                                         HELP1118
+F061119 DFHMDF POS=(09,063),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP1119
+               COLOR=YELLOW                                             HELP1120
+        DFHMDF POS=(09,072),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1121
+* CBLDNM LABEL=LIST-HELP-PTOT-3                                         HELP1122
+F061129 DFHMDF POS=(09,073),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP1123
+               PICOUT='ZZZ',                                           XHELP1124
+               COLOR=BLUE                                               HELP1125
+* CBLDNM LABEL=LIST-SELECT-4                                            HELP1126
+F061138 DFHMDF POS=(09,082),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP1127
+               COLOR=GREEN,                                            XHELP1128
+               HILIGHT=UNDERLINE                                        HELP1129
+        DFHMDF POS=(09,084),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1130
+* CBLDNM LABEL=LIST-HELP-TRAN-4                                         HELP1131
+F061141 DFHMDF POS=(09,085),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP1132
+               COLOR=YELLOW                                             HELP1133
+* CBLDNM LABEL=LIST-HELP-NAME-4                                         HELP1134
+F061146 DFHMDF POS=(09,090),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP1135
+               COLOR=YELLOW                                             HELP1136
+        DFHMDF POS=(09,099),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1137
+* CBLDNM LABEL=LIST-HELP-PTOT-4                                         HELP1138
+F061156 DFHMDF POS=(09,100),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP1139
+               PICOUT='ZZZ',                                           XHELP1140
+               COLOR=BLUE                                               HELP1141
+* CBLDNM LABEL=LIST-SELECT-5                                            HELP1142
+F061165 DFHMDF POS=(09,109),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP1143
+               COLOR=GREEN,                                            XHELP1144
+               HILIGHT=UNDERLINE                                        HELP1145
+        DFHMDF POS=(09,111),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1146
+* CBLDNM LABEL=LIST-HELP-TRAN-5                                         HELP1147
+F061168 DFHMDF POS=(09,112),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP1148
+               COLOR=YELLOW                                             HELP1149
+* CBLDNM LABEL=LIST-HELP-NAME-5                                         HELP1150
+F061173 DFHMDF POS=(09,117),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP1151
+               COLOR=YELLOW                                             HELP1152
+        DFHMDF POS=(09,126),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1153
+* CBLDNM LABEL=LIST-HELP-PTOT-5                                         HELP1154
+F061183 DFHMDF POS=(09,127),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP1155
+               PICOUT='ZZZ',                                           XHELP1156
+               COLOR=BLUE                                               HELP1157
+* CBLDNM LABEL=LIST-SELECT-1                                            HELP1158
+F061189 DFHMDF POS=(10,001),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP1159
+               COLOR=GREEN,                                            XHELP1160
+               HILIGHT=UNDERLINE                                        HELP1161
+        DFHMDF POS=(10,003),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1162
+* CBLDNM LABEL=LIST-HELP-TRAN-1                                         HELP1163
+F061192 DFHMDF POS=(10,004),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP1164
+               COLOR=YELLOW                                             HELP1165
+* CBLDNM LABEL=LIST-HELP-NAME-1                                         HELP1166
+F061197 DFHMDF POS=(10,009),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP1167
+               COLOR=YELLOW                                             HELP1168
+        DFHMDF POS=(10,018),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1169
+* CBLDNM LABEL=LIST-HELP-PTOT-1                                         HELP1170
+F061207 DFHMDF POS=(10,019),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP1171
+               PICOUT='ZZ9',                                           XHELP1172
+               COLOR=BLUE                                               HELP1173
+* CBLDNM LABEL=LIST-SELECT-2                                            HELP1174
+F061216 DFHMDF POS=(10,028),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP1175
+               COLOR=GREEN,                                            XHELP1176
+               HILIGHT=UNDERLINE                                        HELP1177
+        DFHMDF POS=(10,030),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1178
+* CBLDNM LABEL=LIST-HELP-TRAN-2                                         HELP1179
+F061219 DFHMDF POS=(10,031),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP1180
+               COLOR=YELLOW                                             HELP1181
+* CBLDNM LABEL=LIST-HELP-NAME-2                                         HELP1182
+F061224 DFHMDF POS=(10,036),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP1183
+               COLOR=YELLOW                                             HELP1184
+        DFHMDF POS=(10,045),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1185
+* CBLDNM LABEL=LIST-HELP-PTOT-2                                         HELP1186
+F061234 DFHMDF POS=(10,046),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP1187
+               PICOUT='ZZZ',                                           XHELP1188
+               COLOR=BLUE                                               HELP1189
+* CBLDNM LABEL=LIST-SELECT-3                                            HELP1190
+F061243 DFHMDF POS=(10,055),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP1191
+               COLOR=GREEN,                                            XHELP1192
+               HILIGHT=UNDERLINE                                        HELP1193
+        DFHMDF POS=(10,057),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1194
+* CBLDNM LABEL=LIST-HELP-TRAN-3                                         HELP1195
+F061246 DFHMDF POS=(10,058),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP1196
+               COLOR=YELLOW                                             HELP1197
+* CBLDNM LABEL=LIST-HELP-NAME-3                                         HELP1198
+F061251 DFHMDF POS=(10,063),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP1199
+               COLOR=YELLOW                                             HELP1200
+        DFHMDF POS=(10,072),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1201
+* CBLDNM LABEL=LIST-HELP-PTOT-3                                         HELP1202
+F061261 DFHMDF POS=(10,073),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP1203
+               PICOUT='ZZZ',                                           XHELP1204
+               COLOR=BLUE                                               HELP1205
+* CBLDNM LABEL=LIST-SELECT-4                                            HELP1206
+F061270 DFHMDF POS=(10,082),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP1207
+               COLOR=GREEN,                                            XHELP1208
+               HILIGHT=UNDERLINE                                        HELP1209
+        DFHMDF POS=(10,084),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1210
+* CBLDNM LABEL=LIST-HELP-TRAN-4                                         HELP1211
+F061273 DFHMDF POS=(10,085),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP1212
+               COLOR=YELLOW                                             HELP1213
+* CBLDNM LABEL=LIST-HELP-NAME-4                                         HELP1214
+F061278 DFHMDF POS=(10,090),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP1215
+               COLOR=YELLOW                                             HELP1216
+        DFHMDF POS=(10,099),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1217
+* CBLDNM LABEL=LIST-HELP-PTOT-4                                         HELP1218
+F061288 DFHMDF POS=(10,100),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP1219
+               PICOUT='ZZZ',                                           XHELP1220
+               COLOR=BLUE                                               HELP1221
+* CBLDNM LABEL=LIST-SELECT-5                                            HELP1222
+F061297 DFHMDF POS=(10,109),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP1223
+               COLOR=GREEN,                                            XHELP1224
+               HILIGHT=UNDERLINE                                        HELP1225
+        DFHMDF POS=(10,111),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1226
+* CBLDNM LABEL=LIST-HELP-TRAN-5                                         HELP1227
+F061300 DFHMDF POS=(10,112),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP1228
+               COLOR=YELLOW                                             HELP1229
+* CBLDNM LABEL=LIST-HELP-NAME-5                                         HELP1230
+F061305 DFHMDF POS=(10,117),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP1231
+               COLOR=YELLOW                                             HELP1232
+        DFHMDF POS=(10,126),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1233
+* CBLDNM LABEL=LIST-HELP-PTOT-5                                         HELP1234
+F061315 DFHMDF POS=(10,127),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP1235
+               PICOUT='ZZZ',                                           XHELP1236
+               COLOR=BLUE                                               HELP1237
+* CBLDNM LABEL=LIST-SELECT-1                                            HELP1238
+F061321 DFHMDF POS=(11,001),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP1239
+               COLOR=GREEN,                                            XHELP1240
+               HILIGHT=UNDERLINE                                        HELP1241
+        DFHMDF POS=(11,003),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1242
+* CBLDNM LABEL=LIST-HELP-TRAN-1                                         HELP1243
+F061324 DFHMDF POS=(11,004),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP1244
+               COLOR=YELLOW                                             HELP1245
+* CBLDNM LABEL=LIST-HELP-NAME-1                                         HELP1246
+F061329 DFHMDF POS=(11,009),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP1247
+               COLOR=YELLOW                                             HELP1248
+        DFHMDF POS=(11,018),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1249
+* CBLDNM LABEL=LIST-HELP-PTOT-1                                         HELP1250
+F061339 DFHMDF POS=(11,019),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP1251
+               PICOUT='ZZ9',                                           XHELP1252
+               COLOR=BLUE                                               HELP1253
+* CBLDNM LABEL=LIST-SELECT-2                                            HELP1254
+F061348 DFHMDF POS=(11,028),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP1255
+               COLOR=GREEN,                                            XHELP1256
+               HILIGHT=UNDERLINE                                        HELP1257
+        DFHMDF POS=(11,030),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1258
+* CBLDNM LABEL=LIST-HELP-TRAN-2                                         HELP1259
+F061351 DFHMDF POS=(11,031),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP1260
+               COLOR=YELLOW                                             HELP1261
+* CBLDNM LABEL=LIST-HELP-NAME-2                                         HELP1262
+F061356 DFHMDF POS=(11,036),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP1263
+               COLOR=YELLOW                                             HELP1264
+        DFHMDF POS=(11,045),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1265
+* CBLDNM LABEL=LIST-HELP-PTOT-2                                         HELP1266
+F061366 DFHMDF POS=(11,046),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP1267
+               PICOUT='ZZZ',                                           XHELP1268
+               COLOR=BLUE                                               HELP1269
+* CBLDNM LABEL=LIST-SELECT-3                                            HELP1270
+F061375 DFHMDF POS=(11,055),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP1271
+               COLOR=GREEN,                                            XHELP1272
+               HILIGHT=UNDERLINE                                        HELP1273
+        DFHMDF POS=(11,057),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1274
+* CBLDNM LABEL=LIST-HELP-TRAN-3                                         HELP1275
+F061378 DFHMDF POS=(11,058),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP1276
+               COLOR=YELLOW                                             HELP1277
+* CBLDNM LABEL=LIST-HELP-NAME-3                                         HELP1278
+F061383 DFHMDF POS=(11,063),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP1279
+               COLOR=YELLOW                                             HELP1280
+        DFHMDF POS=(11,072),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1281
+* CBLDNM LABEL=LIST-HELP-PTOT-3                                         HELP1282
+F061393 DFHMDF POS=(11,073),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP1283
+               PICOUT='ZZZ',                                           XHELP1284
+               COLOR=BLUE                                               HELP1285
+* CBLDNM LABEL=LIST-SELECT-4                                            HELP1286
+F061402 DFHMDF POS=(11,082),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP1287
+               COLOR=GREEN,                                            XHELP1288
+               HILIGHT=UNDERLINE                                        HELP1289
+        DFHMDF POS=(11,084),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1290
+* CBLDNM LABEL=LIST-HELP-TRAN-4                                         HELP1291
+F061405 DFHMDF POS=(11,085),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP1292
+               COLOR=YELLOW                                             HELP1293
+* CBLDNM LABEL=LIST-HELP-NAME-4                                         HELP1294
+F061410 DFHMDF POS=(11,090),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP1295
+               COLOR=YELLOW                                             HELP1296
+        DFHMDF POS=(11,099),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1297
+* CBLDNM LABEL=LIST-HELP-PTOT-4                                         HELP1298
+F061420 DFHMDF POS=(11,100),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP1299
+               PICOUT='ZZZ',                                           XHELP1300
+               COLOR=BLUE                                               HELP1301
+* CBLDNM LABEL=LIST-SELECT-5                                            HELP1302
+F061429 DFHMDF POS=(11,109),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP1303
+               COLOR=GREEN,                                            XHELP1304
+               HILIGHT=UNDERLINE                                        HELP1305
+        DFHMDF POS=(11,111),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1306
+* CBLDNM LABEL=LIST-HELP-TRAN-5                                         HELP1307
+F061432 DFHMDF POS=(11,112),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP1308
+               COLOR=YELLOW                                             HELP1309
+* CBLDNM LABEL=LIST-HELP-NAME-5                                         HELP1310
+F061437 DFHMDF POS=(11,117),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP1311
+               COLOR=YELLOW                                             HELP1312
+        DFHMDF POS=(11,126),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1313
+* CBLDNM LABEL=LIST-HELP-PTOT-5                                         HELP1314
+F061447 DFHMDF POS=(11,127),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP1315
+               PICOUT='ZZZ',                                           XHELP1316
+               COLOR=BLUE                                               HELP1317
+* CBLDNM LABEL=LIST-SELECT-1                                            HELP1318
+F061453 DFHMDF POS=(12,001),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP1319
+               COLOR=GREEN,                                            XHELP1320
+               HILIGHT=UNDERLINE                                        HELP1321
+        DFHMDF POS=(12,003),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1322
+* CBLDNM LABEL=LIST-HELP-TRAN-1                                         HELP1323
+F061456 DFHMDF POS=(12,004),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP1324
+               COLOR=YELLOW                                             HELP1325
+* CBLDNM LABEL=LIST-HELP-NAME-1                                         HELP1326
+F061461 DFHMDF POS=(12,009),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP1327
+               COLOR=YELLOW                                             HELP1328
+        DFHMDF POS=(12,018),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1329
+* CBLDNM LABEL=LIST-HELP-PTOT-1                                         HELP1330
+F061471 DFHMDF POS=(12,019),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP1331
+               PICOUT='ZZ9',                                           XHELP1332
+               COLOR=BLUE                                               HELP1333
+* CBLDNM LABEL=LIST-SELECT-2                                            HELP1334
+F061480 DFHMDF POS=(12,028),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP1335
+               COLOR=GREEN,                                            XHELP1336
+               HILIGHT=UNDERLINE                                        HELP1337
+        DFHMDF POS=(12,030),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1338
+* CBLDNM LABEL=LIST-HELP-TRAN-2                                         HELP1339
+F061483 DFHMDF POS=(12,031),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP1340
+               COLOR=YELLOW                                             HELP1341
+* CBLDNM LABEL=LIST-HELP-NAME-2                                         HELP1342
+F061488 DFHMDF POS=(12,036),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP1343
+               COLOR=YELLOW                                             HELP1344
+        DFHMDF POS=(12,045),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1345
+* CBLDNM LABEL=LIST-HELP-PTOT-2                                         HELP1346
+F061498 DFHMDF POS=(12,046),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP1347
+               PICOUT='ZZZ',                                           XHELP1348
+               COLOR=BLUE                                               HELP1349
+* CBLDNM LABEL=LIST-SELECT-3                                            HELP1350
+F061507 DFHMDF POS=(12,055),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP1351
+               COLOR=GREEN,                                            XHELP1352
+               HILIGHT=UNDERLINE                                        HELP1353
+        DFHMDF POS=(12,057),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1354
+* CBLDNM LABEL=LIST-HELP-TRAN-3                                         HELP1355
+F061510 DFHMDF POS=(12,058),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP1356
+               COLOR=YELLOW                                             HELP1357
+* CBLDNM LABEL=LIST-HELP-NAME-3                                         HELP1358
+F061515 DFHMDF POS=(12,063),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP1359
+               COLOR=YELLOW                                             HELP1360
+        DFHMDF POS=(12,072),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1361
+* CBLDNM LABEL=LIST-HELP-PTOT-3                                         HELP1362
+F061525 DFHMDF POS=(12,073),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP1363
+               PICOUT='ZZZ',                                           XHELP1364
+               COLOR=BLUE                                               HELP1365
+* CBLDNM LABEL=LIST-SELECT-4                                            HELP1366
+F061534 DFHMDF POS=(12,082),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP1367
+               COLOR=GREEN,                                            XHELP1368
+               HILIGHT=UNDERLINE                                        HELP1369
+        DFHMDF POS=(12,084),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1370
+* CBLDNM LABEL=LIST-HELP-TRAN-4                                         HELP1371
+F061537 DFHMDF POS=(12,085),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP1372
+               COLOR=YELLOW                                             HELP1373
+* CBLDNM LABEL=LIST-HELP-NAME-4                                         HELP1374
+F061542 DFHMDF POS=(12,090),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP1375
+               COLOR=YELLOW                                             HELP1376
+        DFHMDF POS=(12,099),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1377
+* CBLDNM LABEL=LIST-HELP-PTOT-4                                         HELP1378
+F061552 DFHMDF POS=(12,100),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP1379
+               PICOUT='ZZZ',                                           XHELP1380
+               COLOR=BLUE                                               HELP1381
+* CBLDNM LABEL=LIST-SELECT-5                                            HELP1382
+F061561 DFHMDF POS=(12,109),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP1383
+               COLOR=GREEN,                                            XHELP1384
+               HILIGHT=UNDERLINE                                        HELP1385
+        DFHMDF POS=(12,111),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1386
+* CBLDNM LABEL=LIST-HELP-TRAN-5                                         HELP1387
+F061564 DFHMDF POS=(12,112),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP1388
+               COLOR=YELLOW                                             HELP1389
+* CBLDNM LABEL=LIST-HELP-NAME-5                                         HELP1390
+F061569 DFHMDF POS=(12,117),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP1391
+               COLOR=YELLOW                                             HELP1392
+        DFHMDF POS=(12,126),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1393
+* CBLDNM LABEL=LIST-HELP-PTOT-5                                         HELP1394
+F061579 DFHMDF POS=(12,127),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP1395
+               PICOUT='ZZZ',                                           XHELP1396
+               COLOR=BLUE                                               HELP1397
+* CBLDNM LABEL=LIST-SELECT-1                                            HELP1398
+F061585 DFHMDF POS=(13,001),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP1399
+               COLOR=GREEN,                                            XHELP1400
+               HILIGHT=UNDERLINE                                        HELP1401
+        DFHMDF POS=(13,003),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1402
+* CBLDNM LABEL=LIST-HELP-TRAN-1                                         HELP1403
+F061588 DFHMDF POS=(13,004),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP1404
+               COLOR=YELLOW                                             HELP1405
+* CBLDNM LABEL=LIST-HELP-NAME-1                                         HELP1406
+F061593 DFHMDF POS=(13,009),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP1407
+               COLOR=YELLOW                                             HELP1408
+        DFHMDF POS=(13,018),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1409
+* CBLDNM LABEL=LIST-HELP-PTOT-1                                         HELP1410
+F061603 DFHMDF POS=(13,019),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP1411
+               PICOUT='ZZ9',                                           XHELP1412
+               COLOR=BLUE                                               HELP1413
+* CBLDNM LABEL=LIST-SELECT-2                                            HELP1414
+F061612 DFHMDF POS=(13,028),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP1415
+               COLOR=GREEN,                                            XHELP1416
+               HILIGHT=UNDERLINE                                        HELP1417
+        DFHMDF POS=(13,030),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1418
+* CBLDNM LABEL=LIST-HELP-TRAN-2                                         HELP1419
+F061615 DFHMDF POS=(13,031),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP1420
+               COLOR=YELLOW                                             HELP1421
+* CBLDNM LABEL=LIST-HELP-NAME-2                                         HELP1422
+F061620 DFHMDF POS=(13,036),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP1423
+               COLOR=YELLOW                                             HELP1424
+        DFHMDF POS=(13,045),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1425
+* CBLDNM LABEL=LIST-HELP-PTOT-2                                         HELP1426
+F061630 DFHMDF POS=(13,046),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP1427
+               PICOUT='ZZZ',                                           XHELP1428
+               COLOR=BLUE                                               HELP1429
+* CBLDNM LABEL=LIST-SELECT-3                                            HELP1430
+F061639 DFHMDF POS=(13,055),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP1431
+               COLOR=GREEN,                                            XHELP1432
+               HILIGHT=UNDERLINE                                        HELP1433
+        DFHMDF POS=(13,057),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1434
+* CBLDNM LABEL=LIST-HELP-TRAN-3                                         HELP1435
+F061642 DFHMDF POS=(13,058),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP1436
+               COLOR=YELLOW                                             HELP1437
+* CBLDNM LABEL=LIST-HELP-NAME-3                                         HELP1438
+F061647 DFHMDF POS=(13,063),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP1439
+               COLOR=YELLOW                                             HELP1440
+        DFHMDF POS=(13,072),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1441
+* CBLDNM LABEL=LIST-HELP-PTOT-3                                         HELP1442
+F061657 DFHMDF POS=(13,073),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP1443
+               PICOUT='ZZZ',                                           XHELP1444
+               COLOR=BLUE                                               HELP1445
+* CBLDNM LABEL=LIST-SELECT-4                                            HELP1446
+F061666 DFHMDF POS=(13,082),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP1447
+               COLOR=GREEN,                                            XHELP1448
+               HILIGHT=UNDERLINE                                        HELP1449
+        DFHMDF POS=(13,084),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1450
+* CBLDNM LABEL=LIST-HELP-TRAN-4                                         HELP1451
+F061669 DFHMDF POS=(13,085),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP1452
+               COLOR=YELLOW                                             HELP1453
+* CBLDNM LABEL=LIST-HELP-NAME-4                                         HELP1454
+F061674 DFHMDF POS=(13,090),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP1455
+               COLOR=YELLOW                                             HELP1456
+        DFHMDF POS=(13,099),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1457
+* CBLDNM LABEL=LIST-HELP-PTOT-4                                         HELP1458
+F061684 DFHMDF POS=(13,100),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP1459
+               PICOUT='ZZZ',                                           XHELP1460
+               COLOR=BLUE                                               HELP1461
+* CBLDNM LABEL=LIST-SELECT-5                                            HELP1462
+F061693 DFHMDF POS=(13,109),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP1463
+               COLOR=GREEN,                                            XHELP1464
+               HILIGHT=UNDERLINE                                        HELP1465
+        DFHMDF POS=(13,111),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1466
+* CBLDNM LABEL=LIST-HELP-TRAN-5                                         HELP1467
+F061696 DFHMDF POS=(13,112),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP1468
+               COLOR=YELLOW                                             HELP1469
+* CBLDNM LABEL=LIST-HELP-NAME-5                                         HELP1470
+F061701 DFHMDF POS=(13,117),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP1471
+               COLOR=YELLOW                                             HELP1472
+        DFHMDF POS=(13,126),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1473
+* CBLDNM LABEL=LIST-HELP-PTOT-5                                         HELP1474
+F061711 DFHMDF POS=(13,127),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP1475
+               PICOUT='ZZZ',                                           XHELP1476
+               COLOR=BLUE                                               HELP1477
+* CBLDNM LABEL=LIST-SELECT-1                                            HELP1478
+F061717 DFHMDF POS=(14,001),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP1479
+               COLOR=GREEN,                                            XHELP1480
+               HILIGHT=UNDERLINE                                        HELP1481
+        DFHMDF POS=(14,003),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1482
+* CBLDNM LABEL=LIST-HELP-TRAN-1                                         HELP1483
+F061720 DFHMDF POS=(14,004),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP1484
+               COLOR=YELLOW                                             HELP1485
+* CBLDNM LABEL=LIST-HELP-NAME-1                                         HELP1486
+F061725 DFHMDF POS=(14,009),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP1487
+               COLOR=YELLOW                                             HELP1488
+        DFHMDF POS=(14,018),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1489
+* CBLDNM LABEL=LIST-HELP-PTOT-1                                         HELP1490
+F061735 DFHMDF POS=(14,019),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP1491
+               PICOUT='ZZ9',                                           XHELP1492
+               COLOR=BLUE                                               HELP1493
+* CBLDNM LABEL=LIST-SELECT-2                                            HELP1494
+F061744 DFHMDF POS=(14,028),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP1495
+               COLOR=GREEN,                                            XHELP1496
+               HILIGHT=UNDERLINE                                        HELP1497
+        DFHMDF POS=(14,030),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1498
+* CBLDNM LABEL=LIST-HELP-TRAN-2                                         HELP1499
+F061747 DFHMDF POS=(14,031),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP1500
+               COLOR=YELLOW                                             HELP1501
+* CBLDNM LABEL=LIST-HELP-NAME-2                                         HELP1502
+F061752 DFHMDF POS=(14,036),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP1503
+               COLOR=YELLOW                                             HELP1504
+        DFHMDF POS=(14,045),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1505
+* CBLDNM LABEL=LIST-HELP-PTOT-2                                         HELP1506
+F061762 DFHMDF POS=(14,046),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP1507
+               PICOUT='ZZZ',                                           XHELP1508
+               COLOR=BLUE                                               HELP1509
+* CBLDNM LABEL=LIST-SELECT-3                                            HELP1510
+F061771 DFHMDF POS=(14,055),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP1511
+               COLOR=GREEN,                                            XHELP1512
+               HILIGHT=UNDERLINE                                        HELP1513
+        DFHMDF POS=(14,057),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1514
+* CBLDNM LABEL=LIST-HELP-TRAN-3                                         HELP1515
+F061774 DFHMDF POS=(14,058),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP1516
+               COLOR=YELLOW                                             HELP1517
+* CBLDNM LABEL=LIST-HELP-NAME-3                                         HELP1518
+F061779 DFHMDF POS=(14,063),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP1519
+               COLOR=YELLOW                                             HELP1520
+        DFHMDF POS=(14,072),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1521
+* CBLDNM LABEL=LIST-HELP-PTOT-3                                         HELP1522
+F061789 DFHMDF POS=(14,073),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP1523
+               PICOUT='ZZZ',                                           XHELP1524
+               COLOR=BLUE                                               HELP1525
+* CBLDNM LABEL=LIST-SELECT-4                                            HELP1526
+F061798 DFHMDF POS=(14,082),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP1527
+               COLOR=GREEN,                                            XHELP1528
+               HILIGHT=UNDERLINE                                        HELP1529
+        DFHMDF POS=(14,084),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1530
+* CBLDNM LABEL=LIST-HELP-TRAN-4                                         HELP1531
+F061801 DFHMDF POS=(14,085),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP1532
+               COLOR=YELLOW                                             HELP1533
+* CBLDNM LABEL=LIST-HELP-NAME-4                                         HELP1534
+F061806 DFHMDF POS=(14,090),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP1535
+               COLOR=YELLOW                                             HELP1536
+        DFHMDF POS=(14,099),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1537
+* CBLDNM LABEL=LIST-HELP-PTOT-4                                         HELP1538
+F061816 DFHMDF POS=(14,100),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP1539
+               PICOUT='ZZZ',                                           XHELP1540
+               COLOR=BLUE                                               HELP1541
+* CBLDNM LABEL=LIST-SELECT-5                                            HELP1542
+F061825 DFHMDF POS=(14,109),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP1543
+               COLOR=GREEN,                                            XHELP1544
+               HILIGHT=UNDERLINE                                        HELP1545
+        DFHMDF POS=(14,111),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1546
+* CBLDNM LABEL=LIST-HELP-TRAN-5                                         HELP1547
+F061828 DFHMDF POS=(14,112),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP1548
+               COLOR=YELLOW                                             HELP1549
+* CBLDNM LABEL=LIST-HELP-NAME-5                                         HELP1550
+F061833 DFHMDF POS=(14,117),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP1551
+               COLOR=YELLOW                                             HELP1552
+        DFHMDF POS=(14,126),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1553
+* CBLDNM LABEL=LIST-HELP-PTOT-5                                         HELP1554
+F061843 DFHMDF POS=(14,127),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP1555
+               PICOUT='ZZZ',                                           XHELP1556
+               COLOR=BLUE                                               HELP1557
+* CBLDNM LABEL=LIST-SELECT-1                                            HELP1558
+F061849 DFHMDF POS=(15,001),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP1559
+               COLOR=GREEN,                                            XHELP1560
+               HILIGHT=UNDERLINE                                        HELP1561
+        DFHMDF POS=(15,003),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1562
+* CBLDNM LABEL=LIST-HELP-TRAN-1                                         HELP1563
+F061852 DFHMDF POS=(15,004),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP1564
+               COLOR=YELLOW                                             HELP1565
+* CBLDNM LABEL=LIST-HELP-NAME-1                                         HELP1566
+F061857 DFHMDF POS=(15,009),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP1567
+               COLOR=YELLOW                                             HELP1568
+        DFHMDF POS=(15,018),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1569
+* CBLDNM LABEL=LIST-HELP-PTOT-1                                         HELP1570
+F061867 DFHMDF POS=(15,019),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP1571
+               PICOUT='ZZ9',                                           XHELP1572
+               COLOR=BLUE                                               HELP1573
+* CBLDNM LABEL=LIST-SELECT-2                                            HELP1574
+F061876 DFHMDF POS=(15,028),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP1575
+               COLOR=GREEN,                                            XHELP1576
+               HILIGHT=UNDERLINE                                        HELP1577
+        DFHMDF POS=(15,030),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1578
+* CBLDNM LABEL=LIST-HELP-TRAN-2                                         HELP1579
+F061879 DFHMDF POS=(15,031),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP1580
+               COLOR=YELLOW                                             HELP1581
+* CBLDNM LABEL=LIST-HELP-NAME-2                                         HELP1582
+F061884 DFHMDF POS=(15,036),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP1583
+               COLOR=YELLOW                                             HELP1584
+        DFHMDF POS=(15,045),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1585
+* CBLDNM LABEL=LIST-HELP-PTOT-2                                         HELP1586
+F061894 DFHMDF POS=(15,046),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP1587
+               PICOUT='ZZZ',                                           XHELP1588
+               COLOR=BLUE                                               HELP1589
+* CBLDNM LABEL=LIST-SELECT-3                                            HELP1590
+F061903 DFHMDF POS=(15,055),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP1591
+               COLOR=GREEN,                                            XHELP1592
+               HILIGHT=UNDERLINE                                        HELP1593
+        DFHMDF POS=(15,057),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1594
+* CBLDNM LABEL=LIST-HELP-TRAN-3                                         HELP1595
+F061906 DFHMDF POS=(15,058),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP1596
+               COLOR=YELLOW                                             HELP1597
+* CBLDNM LABEL=LIST-HELP-NAME-3                                         HELP1598
+F061911 DFHMDF POS=(15,063),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP1599
+               COLOR=YELLOW                                             HELP1600
+        DFHMDF POS=(15,072),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1601
+* CBLDNM LABEL=LIST-HELP-PTOT-3                                         HELP1602
+F061921 DFHMDF POS=(15,073),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP1603
+               PICOUT='ZZZ',                                           XHELP1604
+               COLOR=BLUE                                               HELP1605
+* CBLDNM LABEL=LIST-SELECT-4                                            HELP1606
+F061930 DFHMDF POS=(15,082),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP1607
+               COLOR=GREEN,                                            XHELP1608
+               HILIGHT=UNDERLINE                                        HELP1609
+        DFHMDF POS=(15,084),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1610
+* CBLDNM LABEL=LIST-HELP-TRAN-4                                         HELP1611
+F061933 DFHMDF POS=(15,085),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP1612
+               COLOR=YELLOW                                             HELP1613
+* CBLDNM LABEL=LIST-HELP-NAME-4                                         HELP1614
+F061938 DFHMDF POS=(15,090),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP1615
+               COLOR=YELLOW                                             HELP1616
+        DFHMDF POS=(15,099),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1617
+* CBLDNM LABEL=LIST-HELP-PTOT-4                                         HELP1618
+F061948 DFHMDF POS=(15,100),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP1619
+               PICOUT='ZZZ',                                           XHELP1620
+               COLOR=BLUE                                               HELP1621
+* CBLDNM LABEL=LIST-SELECT-5                                            HELP1622
+F061957 DFHMDF POS=(15,109),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP1623
+               COLOR=GREEN,                                            XHELP1624
+               HILIGHT=UNDERLINE                                        HELP1625
+        DFHMDF POS=(15,111),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1626
+* CBLDNM LABEL=LIST-HELP-TRAN-5                                         HELP1627
+F061960 DFHMDF POS=(15,112),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP1628
+               COLOR=YELLOW                                             HELP1629
+* CBLDNM LABEL=LIST-HELP-NAME-5                                         HELP1630
+F061965 DFHMDF POS=(15,117),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP1631
+               COLOR=YELLOW                                             HELP1632
+        DFHMDF POS=(15,126),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1633
+* CBLDNM LABEL=LIST-HELP-PTOT-5                                         HELP1634
+F061975 DFHMDF POS=(15,127),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP1635
+               PICOUT='ZZZ',                                           XHELP1636
+               COLOR=BLUE                                               HELP1637
+* CBLDNM LABEL=LIST-SELECT-1                                            HELP1638
+F061981 DFHMDF POS=(16,001),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP1639
+               COLOR=GREEN,                                            XHELP1640
+               HILIGHT=UNDERLINE                                        HELP1641
+        DFHMDF POS=(16,003),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1642
+* CBLDNM LABEL=LIST-HELP-TRAN-1                                         HELP1643
+F061984 DFHMDF POS=(16,004),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP1644
+               COLOR=YELLOW                                             HELP1645
+* CBLDNM LABEL=LIST-HELP-NAME-1                                         HELP1646
+F061989 DFHMDF POS=(16,009),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP1647
+               COLOR=YELLOW                                             HELP1648
+        DFHMDF POS=(16,018),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1649
+* CBLDNM LABEL=LIST-HELP-PTOT-1                                         HELP1650
+F061999 DFHMDF POS=(16,019),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP1651
+               PICOUT='ZZ9',                                           XHELP1652
+               COLOR=BLUE                                               HELP1653
+* CBLDNM LABEL=LIST-SELECT-2                                            HELP1654
+F062008 DFHMDF POS=(16,028),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP1655
+               COLOR=GREEN,                                            XHELP1656
+               HILIGHT=UNDERLINE                                        HELP1657
+        DFHMDF POS=(16,030),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1658
+* CBLDNM LABEL=LIST-HELP-TRAN-2                                         HELP1659
+F062011 DFHMDF POS=(16,031),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP1660
+               COLOR=YELLOW                                             HELP1661
+* CBLDNM LABEL=LIST-HELP-NAME-2                                         HELP1662
+F062016 DFHMDF POS=(16,036),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP1663
+               COLOR=YELLOW                                             HELP1664
+        DFHMDF POS=(16,045),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1665
+* CBLDNM LABEL=LIST-HELP-PTOT-2                                         HELP1666
+F062026 DFHMDF POS=(16,046),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP1667
+               PICOUT='ZZZ',                                           XHELP1668
+               COLOR=BLUE                                               HELP1669
+* CBLDNM LABEL=LIST-SELECT-3                                            HELP1670
+F062035 DFHMDF POS=(16,055),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP1671
+               COLOR=GREEN,                                            XHELP1672
+               HILIGHT=UNDERLINE                                        HELP1673
+        DFHMDF POS=(16,057),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1674
+* CBLDNM LABEL=LIST-HELP-TRAN-3                                         HELP1675
+F062038 DFHMDF POS=(16,058),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP1676
+               COLOR=YELLOW                                             HELP1677
+* CBLDNM LABEL=LIST-HELP-NAME-3                                         HELP1678
+F062043 DFHMDF POS=(16,063),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP1679
+               COLOR=YELLOW                                             HELP1680
+        DFHMDF POS=(16,072),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1681
+* CBLDNM LABEL=LIST-HELP-PTOT-3                                         HELP1682
+F062053 DFHMDF POS=(16,073),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP1683
+               PICOUT='ZZZ',                                           XHELP1684
+               COLOR=BLUE                                               HELP1685
+* CBLDNM LABEL=LIST-SELECT-4                                            HELP1686
+F062062 DFHMDF POS=(16,082),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP1687
+               COLOR=GREEN,                                            XHELP1688
+               HILIGHT=UNDERLINE                                        HELP1689
+        DFHMDF POS=(16,084),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1690
+* CBLDNM LABEL=LIST-HELP-TRAN-4                                         HELP1691
+F062065 DFHMDF POS=(16,085),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP1692
+               COLOR=YELLOW                                             HELP1693
+* CBLDNM LABEL=LIST-HELP-NAME-4                                         HELP1694
+F062070 DFHMDF POS=(16,090),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP1695
+               COLOR=YELLOW                                             HELP1696
+        DFHMDF POS=(16,099),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1697
+* CBLDNM LABEL=LIST-HELP-PTOT-4                                         HELP1698
+F062080 DFHMDF POS=(16,100),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP1699
+               PICOUT='ZZZ',                                           XHELP1700
+               COLOR=BLUE                                               HELP1701
+* CBLDNM LABEL=LIST-SELECT-5                                            HELP1702
+F062089 DFHMDF POS=(16,109),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP1703
+               COLOR=GREEN,                                            XHELP1704
+               HILIGHT=UNDERLINE                                        HELP1705
+        DFHMDF POS=(16,111),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1706
+* CBLDNM LABEL=LIST-HELP-TRAN-5                                         HELP1707
+F062092 DFHMDF POS=(16,112),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP1708
+               COLOR=YELLOW                                             HELP1709
+* CBLDNM LABEL=LIST-HELP-NAME-5                                         HELP1710
+F062097 DFHMDF POS=(16,117),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP1711
+               COLOR=YELLOW                                             HELP1712
+        DFHMDF POS=(16,126),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1713
+* CBLDNM LABEL=LIST-HELP-PTOT-5                                         HELP1714
+F062107 DFHMDF POS=(16,127),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP1715
+               PICOUT='ZZZ',                                           XHELP1716
+               COLOR=BLUE                                               HELP1717
+* CBLDNM LABEL=LIST-SELECT-1                                            HELP1718
+F062113 DFHMDF POS=(17,001),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP1719
+               COLOR=GREEN,                                            XHELP1720
+               HILIGHT=UNDERLINE                                        HELP1721
+        DFHMDF POS=(17,003),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1722
+* CBLDNM LABEL=LIST-HELP-TRAN-1                                         HELP1723
+F062116 DFHMDF POS=(17,004),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP1724
+               COLOR=YELLOW                                             HELP1725
+* CBLDNM LABEL=LIST-HELP-NAME-1                                         HELP1726
+F062121 DFHMDF POS=(17,009),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP1727
+               COLOR=YELLOW                                             HELP1728
+        DFHMDF POS=(17,018),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1729
+* CBLDNM LABEL=LIST-HELP-PTOT-1                                         HELP1730
+F062131 DFHMDF POS=(17,019),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP1731
+               PICOUT='ZZ9',                                           XHELP1732
+               COLOR=BLUE                                               HELP1733
+* CBLDNM LABEL=LIST-SELECT-2                                            HELP1734
+F062140 DFHMDF POS=(17,028),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP1735
+               COLOR=GREEN,                                            XHELP1736
+               HILIGHT=UNDERLINE                                        HELP1737
+        DFHMDF POS=(17,030),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1738
+* CBLDNM LABEL=LIST-HELP-TRAN-2                                         HELP1739
+F062143 DFHMDF POS=(17,031),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP1740
+               COLOR=YELLOW                                             HELP1741
+* CBLDNM LABEL=LIST-HELP-NAME-2                                         HELP1742
+F062148 DFHMDF POS=(17,036),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP1743
+               COLOR=YELLOW                                             HELP1744
+        DFHMDF POS=(17,045),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1745
+* CBLDNM LABEL=LIST-HELP-PTOT-2                                         HELP1746
+F062158 DFHMDF POS=(17,046),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP1747
+               PICOUT='ZZZ',                                           XHELP1748
+               COLOR=BLUE                                               HELP1749
+* CBLDNM LABEL=LIST-SELECT-3                                            HELP1750
+F062167 DFHMDF POS=(17,055),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP1751
+               COLOR=GREEN,                                            XHELP1752
+               HILIGHT=UNDERLINE                                        HELP1753
+        DFHMDF POS=(17,057),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1754
+* CBLDNM LABEL=LIST-HELP-TRAN-3                                         HELP1755
+F062170 DFHMDF POS=(17,058),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP1756
+               COLOR=YELLOW                                             HELP1757
+* CBLDNM LABEL=LIST-HELP-NAME-3                                         HELP1758
+F062175 DFHMDF POS=(17,063),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP1759
+               COLOR=YELLOW                                             HELP1760
+        DFHMDF POS=(17,072),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1761
+* CBLDNM LABEL=LIST-HELP-PTOT-3                                         HELP1762
+F062185 DFHMDF POS=(17,073),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP1763
+               PICOUT='ZZZ',                                           XHELP1764
+               COLOR=BLUE                                               HELP1765
+* CBLDNM LABEL=LIST-SELECT-4                                            HELP1766
+F062194 DFHMDF POS=(17,082),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP1767
+               COLOR=GREEN,                                            XHELP1768
+               HILIGHT=UNDERLINE                                        HELP1769
+        DFHMDF POS=(17,084),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1770
+* CBLDNM LABEL=LIST-HELP-TRAN-4                                         HELP1771
+F062197 DFHMDF POS=(17,085),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP1772
+               COLOR=YELLOW                                             HELP1773
+* CBLDNM LABEL=LIST-HELP-NAME-4                                         HELP1774
+F062202 DFHMDF POS=(17,090),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP1775
+               COLOR=YELLOW                                             HELP1776
+        DFHMDF POS=(17,099),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1777
+* CBLDNM LABEL=LIST-HELP-PTOT-4                                         HELP1778
+F062212 DFHMDF POS=(17,100),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP1779
+               PICOUT='ZZZ',                                           XHELP1780
+               COLOR=BLUE                                               HELP1781
+* CBLDNM LABEL=LIST-SELECT-5                                            HELP1782
+F062221 DFHMDF POS=(17,109),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP1783
+               COLOR=GREEN,                                            XHELP1784
+               HILIGHT=UNDERLINE                                        HELP1785
+        DFHMDF POS=(17,111),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1786
+* CBLDNM LABEL=LIST-HELP-TRAN-5                                         HELP1787
+F062224 DFHMDF POS=(17,112),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP1788
+               COLOR=YELLOW                                             HELP1789
+* CBLDNM LABEL=LIST-HELP-NAME-5                                         HELP1790
+F062229 DFHMDF POS=(17,117),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP1791
+               COLOR=YELLOW                                             HELP1792
+        DFHMDF POS=(17,126),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1793
+* CBLDNM LABEL=LIST-HELP-PTOT-5                                         HELP1794
+F062239 DFHMDF POS=(17,127),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP1795
+               PICOUT='ZZZ',                                           XHELP1796
+               COLOR=BLUE                                               HELP1797
+* CBLDNM LABEL=LIST-SELECT-1                                            HELP1798
+F062245 DFHMDF POS=(18,001),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP1799
+               COLOR=GREEN,                                            XHELP1800
+               HILIGHT=UNDERLINE                                        HELP1801
+        DFHMDF POS=(18,003),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1802
+* CBLDNM LABEL=LIST-HELP-TRAN-1                                         HELP1803
+F062248 DFHMDF POS=(18,004),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP1804
+               COLOR=YELLOW                                             HELP1805
+* CBLDNM LABEL=LIST-HELP-NAME-1                                         HELP1806
+F062253 DFHMDF POS=(18,009),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP1807
+               COLOR=YELLOW                                             HELP1808
+        DFHMDF POS=(18,018),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1809
+* CBLDNM LABEL=LIST-HELP-PTOT-1                                         HELP1810
+F062263 DFHMDF POS=(18,019),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP1811
+               PICOUT='ZZ9',                                           XHELP1812
+               COLOR=BLUE                                               HELP1813
+* CBLDNM LABEL=LIST-SELECT-2                                            HELP1814
+F062272 DFHMDF POS=(18,028),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP1815
+               COLOR=GREEN,                                            XHELP1816
+               HILIGHT=UNDERLINE                                        HELP1817
+        DFHMDF POS=(18,030),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1818
+* CBLDNM LABEL=LIST-HELP-TRAN-2                                         HELP1819
+F062275 DFHMDF POS=(18,031),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP1820
+               COLOR=YELLOW                                             HELP1821
+* CBLDNM LABEL=LIST-HELP-NAME-2                                         HELP1822
+F062280 DFHMDF POS=(18,036),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP1823
+               COLOR=YELLOW                                             HELP1824
+        DFHMDF POS=(18,045),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1825
+* CBLDNM LABEL=LIST-HELP-PTOT-2                                         HELP1826
+F062290 DFHMDF POS=(18,046),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP1827
+               PICOUT='ZZZ',                                           XHELP1828
+               COLOR=BLUE                                               HELP1829
+* CBLDNM LABEL=LIST-SELECT-3                                            HELP1830
+F062299 DFHMDF POS=(18,055),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP1831
+               COLOR=GREEN,                                            XHELP1832
+               HILIGHT=UNDERLINE                                        HELP1833
+        DFHMDF POS=(18,057),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1834
+* CBLDNM LABEL=LIST-HELP-TRAN-3                                         HELP1835
+F062302 DFHMDF POS=(18,058),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP1836
+               COLOR=YELLOW                                             HELP1837
+* CBLDNM LABEL=LIST-HELP-NAME-3                                         HELP1838
+F062307 DFHMDF POS=(18,063),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP1839
+               COLOR=YELLOW                                             HELP1840
+        DFHMDF POS=(18,072),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1841
+* CBLDNM LABEL=LIST-HELP-PTOT-3                                         HELP1842
+F062317 DFHMDF POS=(18,073),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP1843
+               PICOUT='ZZZ',                                           XHELP1844
+               COLOR=BLUE                                               HELP1845
+* CBLDNM LABEL=LIST-SELECT-4                                            HELP1846
+F062326 DFHMDF POS=(18,082),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP1847
+               COLOR=GREEN,                                            XHELP1848
+               HILIGHT=UNDERLINE                                        HELP1849
+        DFHMDF POS=(18,084),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1850
+* CBLDNM LABEL=LIST-HELP-TRAN-4                                         HELP1851
+F062329 DFHMDF POS=(18,085),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP1852
+               COLOR=YELLOW                                             HELP1853
+* CBLDNM LABEL=LIST-HELP-NAME-4                                         HELP1854
+F062334 DFHMDF POS=(18,090),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP1855
+               COLOR=YELLOW                                             HELP1856
+        DFHMDF POS=(18,099),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1857
+* CBLDNM LABEL=LIST-HELP-PTOT-4                                         HELP1858
+F062344 DFHMDF POS=(18,100),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP1859
+               PICOUT='ZZZ',                                           XHELP1860
+               COLOR=BLUE                                               HELP1861
+* CBLDNM LABEL=LIST-SELECT-5                                            HELP1862
+F062353 DFHMDF POS=(18,109),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP1863
+               COLOR=GREEN,                                            XHELP1864
+               HILIGHT=UNDERLINE                                        HELP1865
+        DFHMDF POS=(18,111),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1866
+* CBLDNM LABEL=LIST-HELP-TRAN-5                                         HELP1867
+F062356 DFHMDF POS=(18,112),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP1868
+               COLOR=YELLOW                                             HELP1869
+* CBLDNM LABEL=LIST-HELP-NAME-5                                         HELP1870
+F062361 DFHMDF POS=(18,117),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP1871
+               COLOR=YELLOW                                             HELP1872
+        DFHMDF POS=(18,126),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1873
+* CBLDNM LABEL=LIST-HELP-PTOT-5                                         HELP1874
+F062371 DFHMDF POS=(18,127),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP1875
+               PICOUT='ZZZ',                                           XHELP1876
+               COLOR=BLUE                                               HELP1877
+* CBLDNM LABEL=LIST-SELECT-1                                            HELP1878
+F062377 DFHMDF POS=(19,001),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP1879
+               COLOR=GREEN,                                            XHELP1880
+               HILIGHT=UNDERLINE                                        HELP1881
+        DFHMDF POS=(19,003),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1882
+* CBLDNM LABEL=LIST-HELP-TRAN-1                                         HELP1883
+F062380 DFHMDF POS=(19,004),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP1884
+               COLOR=YELLOW                                             HELP1885
+* CBLDNM LABEL=LIST-HELP-NAME-1                                         HELP1886
+F062385 DFHMDF POS=(19,009),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP1887
+               COLOR=YELLOW                                             HELP1888
+        DFHMDF POS=(19,018),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1889
+* CBLDNM LABEL=LIST-HELP-PTOT-1                                         HELP1890
+F062395 DFHMDF POS=(19,019),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP1891
+               PICOUT='ZZ9',                                           XHELP1892
+               COLOR=BLUE                                               HELP1893
+* CBLDNM LABEL=LIST-SELECT-2                                            HELP1894
+F062404 DFHMDF POS=(19,028),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP1895
+               COLOR=GREEN,                                            XHELP1896
+               HILIGHT=UNDERLINE                                        HELP1897
+        DFHMDF POS=(19,030),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1898
+* CBLDNM LABEL=LIST-HELP-TRAN-2                                         HELP1899
+F062407 DFHMDF POS=(19,031),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP1900
+               COLOR=YELLOW                                             HELP1901
+* CBLDNM LABEL=LIST-HELP-NAME-2                                         HELP1902
+F062412 DFHMDF POS=(19,036),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP1903
+               COLOR=YELLOW                                             HELP1904
+        DFHMDF POS=(19,045),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1905
+* CBLDNM LABEL=LIST-HELP-PTOT-2                                         HELP1906
+F062422 DFHMDF POS=(19,046),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP1907
+               PICOUT='ZZZ',                                           XHELP1908
+               COLOR=BLUE                                               HELP1909
+* CBLDNM LABEL=LIST-SELECT-3                                            HELP1910
+F062431 DFHMDF POS=(19,055),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP1911
+               COLOR=GREEN,                                            XHELP1912
+               HILIGHT=UNDERLINE                                        HELP1913
+        DFHMDF POS=(19,057),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1914
+* CBLDNM LABEL=LIST-HELP-TRAN-3                                         HELP1915
+F062434 DFHMDF POS=(19,058),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP1916
+               COLOR=YELLOW                                             HELP1917
+* CBLDNM LABEL=LIST-HELP-NAME-3                                         HELP1918
+F062439 DFHMDF POS=(19,063),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP1919
+               COLOR=YELLOW                                             HELP1920
+        DFHMDF POS=(19,072),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1921
+* CBLDNM LABEL=LIST-HELP-PTOT-3                                         HELP1922
+F062449 DFHMDF POS=(19,073),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP1923
+               PICOUT='ZZZ',                                           XHELP1924
+               COLOR=BLUE                                               HELP1925
+* CBLDNM LABEL=LIST-SELECT-4                                            HELP1926
+F062458 DFHMDF POS=(19,082),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP1927
+               COLOR=GREEN,                                            XHELP1928
+               HILIGHT=UNDERLINE                                        HELP1929
+        DFHMDF POS=(19,084),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1930
+* CBLDNM LABEL=LIST-HELP-TRAN-4                                         HELP1931
+F062461 DFHMDF POS=(19,085),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP1932
+               COLOR=YELLOW                                             HELP1933
+* CBLDNM LABEL=LIST-HELP-NAME-4                                         HELP1934
+F062466 DFHMDF POS=(19,090),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP1935
+               COLOR=YELLOW                                             HELP1936
+        DFHMDF POS=(19,099),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1937
+* CBLDNM LABEL=LIST-HELP-PTOT-4                                         HELP1938
+F062476 DFHMDF POS=(19,100),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP1939
+               PICOUT='ZZZ',                                           XHELP1940
+               COLOR=BLUE                                               HELP1941
+* CBLDNM LABEL=LIST-SELECT-5                                            HELP1942
+F062485 DFHMDF POS=(19,109),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP1943
+               COLOR=GREEN,                                            XHELP1944
+               HILIGHT=UNDERLINE                                        HELP1945
+        DFHMDF POS=(19,111),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1946
+* CBLDNM LABEL=LIST-HELP-TRAN-5                                         HELP1947
+F062488 DFHMDF POS=(19,112),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP1948
+               COLOR=YELLOW                                             HELP1949
+* CBLDNM LABEL=LIST-HELP-NAME-5                                         HELP1950
+F062493 DFHMDF POS=(19,117),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP1951
+               COLOR=YELLOW                                             HELP1952
+        DFHMDF POS=(19,126),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1953
+* CBLDNM LABEL=LIST-HELP-PTOT-5                                         HELP1954
+F062503 DFHMDF POS=(19,127),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP1955
+               PICOUT='ZZZ',                                           XHELP1956
+               COLOR=BLUE                                               HELP1957
+* CBLDNM LABEL=LIST-SELECT-1                                            HELP1958
+F062509 DFHMDF POS=(20,001),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP1959
+               COLOR=GREEN,                                            XHELP1960
+               HILIGHT=UNDERLINE                                        HELP1961
+        DFHMDF POS=(20,003),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1962
+* CBLDNM LABEL=LIST-HELP-TRAN-1                                         HELP1963
+F062512 DFHMDF POS=(20,004),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP1964
+               COLOR=YELLOW                                             HELP1965
+* CBLDNM LABEL=LIST-HELP-NAME-1                                         HELP1966
+F062517 DFHMDF POS=(20,009),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP1967
+               COLOR=YELLOW                                             HELP1968
+        DFHMDF POS=(20,018),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1969
+* CBLDNM LABEL=LIST-HELP-PTOT-1                                         HELP1970
+F062527 DFHMDF POS=(20,019),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP1971
+               PICOUT='ZZ9',                                           XHELP1972
+               COLOR=BLUE                                               HELP1973
+* CBLDNM LABEL=LIST-SELECT-2                                            HELP1974
+F062536 DFHMDF POS=(20,028),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP1975
+               COLOR=GREEN,                                            XHELP1976
+               HILIGHT=UNDERLINE                                        HELP1977
+        DFHMDF POS=(20,030),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1978
+* CBLDNM LABEL=LIST-HELP-TRAN-2                                         HELP1979
+F062539 DFHMDF POS=(20,031),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP1980
+               COLOR=YELLOW                                             HELP1981
+* CBLDNM LABEL=LIST-HELP-NAME-2                                         HELP1982
+F062544 DFHMDF POS=(20,036),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP1983
+               COLOR=YELLOW                                             HELP1984
+        DFHMDF POS=(20,045),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1985
+* CBLDNM LABEL=LIST-HELP-PTOT-2                                         HELP1986
+F062554 DFHMDF POS=(20,046),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP1987
+               PICOUT='ZZZ',                                           XHELP1988
+               COLOR=BLUE                                               HELP1989
+* CBLDNM LABEL=LIST-SELECT-3                                            HELP1990
+F062563 DFHMDF POS=(20,055),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP1991
+               COLOR=GREEN,                                            XHELP1992
+               HILIGHT=UNDERLINE                                        HELP1993
+        DFHMDF POS=(20,057),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP1994
+* CBLDNM LABEL=LIST-HELP-TRAN-3                                         HELP1995
+F062566 DFHMDF POS=(20,058),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP1996
+               COLOR=YELLOW                                             HELP1997
+* CBLDNM LABEL=LIST-HELP-NAME-3                                         HELP1998
+F062571 DFHMDF POS=(20,063),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP1999
+               COLOR=YELLOW                                             HELP2000
+        DFHMDF POS=(20,072),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP2001
+* CBLDNM LABEL=LIST-HELP-PTOT-3                                         HELP2002
+F062581 DFHMDF POS=(20,073),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP2003
+               PICOUT='ZZZ',                                           XHELP2004
+               COLOR=BLUE                                               HELP2005
+* CBLDNM LABEL=LIST-SELECT-4                                            HELP2006
+F062590 DFHMDF POS=(20,082),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP2007
+               COLOR=GREEN,                                            XHELP2008
+               HILIGHT=UNDERLINE                                        HELP2009
+        DFHMDF POS=(20,084),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP2010
+* CBLDNM LABEL=LIST-HELP-TRAN-4                                         HELP2011
+F062593 DFHMDF POS=(20,085),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP2012
+               COLOR=YELLOW                                             HELP2013
+* CBLDNM LABEL=LIST-HELP-NAME-4                                         HELP2014
+F062598 DFHMDF POS=(20,090),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP2015
+               COLOR=YELLOW                                             HELP2016
+        DFHMDF POS=(20,099),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP2017
+* CBLDNM LABEL=LIST-HELP-PTOT-4                                         HELP2018
+F062608 DFHMDF POS=(20,100),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP2019
+               PICOUT='ZZZ',                                           XHELP2020
+               COLOR=BLUE                                               HELP2021
+* CBLDNM LABEL=LIST-SELECT-5                                            HELP2022
+F062617 DFHMDF POS=(20,109),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP2023
+               COLOR=GREEN,                                            XHELP2024
+               HILIGHT=UNDERLINE                                        HELP2025
+        DFHMDF POS=(20,111),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP2026
+* CBLDNM LABEL=LIST-HELP-TRAN-5                                         HELP2027
+F062620 DFHMDF POS=(20,112),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP2028
+               COLOR=YELLOW                                             HELP2029
+* CBLDNM LABEL=LIST-HELP-NAME-5                                         HELP2030
+F062625 DFHMDF POS=(20,117),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP2031
+               COLOR=YELLOW                                             HELP2032
+        DFHMDF POS=(20,126),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP2033
+* CBLDNM LABEL=LIST-HELP-PTOT-5                                         HELP2034
+F062635 DFHMDF POS=(20,127),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP2035
+               PICOUT='ZZZ',                                           XHELP2036
+               COLOR=BLUE                                               HELP2037
+* CBLDNM LABEL=LIST-SELECT-1                                            HELP2038
+F062641 DFHMDF POS=(21,001),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP2039
+               COLOR=GREEN,                                            XHELP2040
+               HILIGHT=UNDERLINE                                        HELP2041
+        DFHMDF POS=(21,003),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP2042
+* CBLDNM LABEL=LIST-HELP-TRAN-1                                         HELP2043
+F062644 DFHMDF POS=(21,004),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP2044
+               COLOR=YELLOW                                             HELP2045
+* CBLDNM LABEL=LIST-HELP-NAME-1                                         HELP2046
+F062649 DFHMDF POS=(21,009),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP2047
+               COLOR=YELLOW                                             HELP2048
+        DFHMDF POS=(21,018),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP2049
+* CBLDNM LABEL=LIST-HELP-PTOT-1                                         HELP2050
+F062659 DFHMDF POS=(21,019),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP2051
+               PICOUT='ZZ9',                                           XHELP2052
+               COLOR=BLUE                                               HELP2053
+* CBLDNM LABEL=LIST-SELECT-2                                            HELP2054
+F062668 DFHMDF POS=(21,028),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP2055
+               COLOR=GREEN,                                            XHELP2056
+               HILIGHT=UNDERLINE                                        HELP2057
+        DFHMDF POS=(21,030),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP2058
+* CBLDNM LABEL=LIST-HELP-TRAN-2                                         HELP2059
+F062671 DFHMDF POS=(21,031),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP2060
+               COLOR=YELLOW                                             HELP2061
+* CBLDNM LABEL=LIST-HELP-NAME-2                                         HELP2062
+F062676 DFHMDF POS=(21,036),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP2063
+               COLOR=YELLOW                                             HELP2064
+        DFHMDF POS=(21,045),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP2065
+* CBLDNM LABEL=LIST-HELP-PTOT-2                                         HELP2066
+F062686 DFHMDF POS=(21,046),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP2067
+               PICOUT='ZZZ',                                           XHELP2068
+               COLOR=BLUE                                               HELP2069
+* CBLDNM LABEL=LIST-SELECT-3                                            HELP2070
+F062695 DFHMDF POS=(21,055),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP2071
+               COLOR=GREEN,                                            XHELP2072
+               HILIGHT=UNDERLINE                                        HELP2073
+        DFHMDF POS=(21,057),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP2074
+* CBLDNM LABEL=LIST-HELP-TRAN-3                                         HELP2075
+F062698 DFHMDF POS=(21,058),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP2076
+               COLOR=YELLOW                                             HELP2077
+* CBLDNM LABEL=LIST-HELP-NAME-3                                         HELP2078
+F062703 DFHMDF POS=(21,063),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP2079
+               COLOR=YELLOW                                             HELP2080
+        DFHMDF POS=(21,072),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP2081
+* CBLDNM LABEL=LIST-HELP-PTOT-3                                         HELP2082
+F062713 DFHMDF POS=(21,073),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP2083
+               PICOUT='ZZZ',                                           XHELP2084
+               COLOR=BLUE                                               HELP2085
+* CBLDNM LABEL=LIST-SELECT-4                                            HELP2086
+F062722 DFHMDF POS=(21,082),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP2087
+               COLOR=GREEN,                                            XHELP2088
+               HILIGHT=UNDERLINE                                        HELP2089
+        DFHMDF POS=(21,084),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP2090
+* CBLDNM LABEL=LIST-HELP-TRAN-4                                         HELP2091
+F062725 DFHMDF POS=(21,085),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP2092
+               COLOR=YELLOW                                             HELP2093
+* CBLDNM LABEL=LIST-HELP-NAME-4                                         HELP2094
+F062730 DFHMDF POS=(21,090),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP2095
+               COLOR=YELLOW                                             HELP2096
+        DFHMDF POS=(21,099),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP2097
+* CBLDNM LABEL=LIST-HELP-PTOT-4                                         HELP2098
+F062740 DFHMDF POS=(21,100),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP2099
+               PICOUT='ZZZ',                                           XHELP2100
+               COLOR=BLUE                                               HELP2101
+* CBLDNM LABEL=LIST-SELECT-5                                            HELP2102
+F062749 DFHMDF POS=(21,109),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP2103
+               COLOR=GREEN,                                            XHELP2104
+               HILIGHT=UNDERLINE                                        HELP2105
+        DFHMDF POS=(21,111),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP2106
+* CBLDNM LABEL=LIST-HELP-TRAN-5                                         HELP2107
+F062752 DFHMDF POS=(21,112),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP2108
+               COLOR=YELLOW                                             HELP2109
+* CBLDNM LABEL=LIST-HELP-NAME-5                                         HELP2110
+F062757 DFHMDF POS=(21,117),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP2111
+               COLOR=YELLOW                                             HELP2112
+        DFHMDF POS=(21,126),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP2113
+* CBLDNM LABEL=LIST-HELP-PTOT-5                                         HELP2114
+F062767 DFHMDF POS=(21,127),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP2115
+               PICOUT='ZZZ',                                           XHELP2116
+               COLOR=BLUE                                               HELP2117
+* CBLDNM LABEL=LIST-SELECT-1                                            HELP2118
+F062773 DFHMDF POS=(22,001),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP2119
+               COLOR=GREEN,                                            XHELP2120
+               HILIGHT=UNDERLINE                                        HELP2121
+        DFHMDF POS=(22,003),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP2122
+* CBLDNM LABEL=LIST-HELP-TRAN-1                                         HELP2123
+F062776 DFHMDF POS=(22,004),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP2124
+               COLOR=YELLOW                                             HELP2125
+* CBLDNM LABEL=LIST-HELP-NAME-1                                         HELP2126
+F062781 DFHMDF POS=(22,009),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP2127
+               COLOR=YELLOW                                             HELP2128
+        DFHMDF POS=(22,018),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP2129
+* CBLDNM LABEL=LIST-HELP-PTOT-1                                         HELP2130
+F062791 DFHMDF POS=(22,019),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP2131
+               PICOUT='ZZ9',                                           XHELP2132
+               COLOR=BLUE                                               HELP2133
+* CBLDNM LABEL=LIST-SELECT-2                                            HELP2134
+F062800 DFHMDF POS=(22,028),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP2135
+               COLOR=GREEN,                                            XHELP2136
+               HILIGHT=UNDERLINE                                        HELP2137
+        DFHMDF POS=(22,030),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP2138
+* CBLDNM LABEL=LIST-HELP-TRAN-2                                         HELP2139
+F062803 DFHMDF POS=(22,031),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP2140
+               COLOR=YELLOW                                             HELP2141
+* CBLDNM LABEL=LIST-HELP-NAME-2                                         HELP2142
+F062808 DFHMDF POS=(22,036),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP2143
+               COLOR=YELLOW                                             HELP2144
+        DFHMDF POS=(22,045),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP2145
+* CBLDNM LABEL=LIST-HELP-PTOT-2                                         HELP2146
+F062818 DFHMDF POS=(22,046),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP2147
+               PICOUT='ZZZ',                                           XHELP2148
+               COLOR=BLUE                                               HELP2149
+* CBLDNM LABEL=LIST-SELECT-3                                            HELP2150
+F062827 DFHMDF POS=(22,055),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP2151
+               COLOR=GREEN,                                            XHELP2152
+               HILIGHT=UNDERLINE                                        HELP2153
+        DFHMDF POS=(22,057),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP2154
+* CBLDNM LABEL=LIST-HELP-TRAN-3                                         HELP2155
+F062830 DFHMDF POS=(22,058),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP2156
+               COLOR=YELLOW                                             HELP2157
+* CBLDNM LABEL=LIST-HELP-NAME-3                                         HELP2158
+F062835 DFHMDF POS=(22,063),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP2159
+               COLOR=YELLOW                                             HELP2160
+        DFHMDF POS=(22,072),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP2161
+* CBLDNM LABEL=LIST-HELP-PTOT-3                                         HELP2162
+F062845 DFHMDF POS=(22,073),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP2163
+               PICOUT='ZZZ',                                           XHELP2164
+               COLOR=BLUE                                               HELP2165
+* CBLDNM LABEL=LIST-SELECT-4                                            HELP2166
+F062854 DFHMDF POS=(22,082),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP2167
+               COLOR=GREEN,                                            XHELP2168
+               HILIGHT=UNDERLINE                                        HELP2169
+        DFHMDF POS=(22,084),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP2170
+* CBLDNM LABEL=LIST-HELP-TRAN-4                                         HELP2171
+F062857 DFHMDF POS=(22,085),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP2172
+               COLOR=YELLOW                                             HELP2173
+* CBLDNM LABEL=LIST-HELP-NAME-4                                         HELP2174
+F062862 DFHMDF POS=(22,090),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP2175
+               COLOR=YELLOW                                             HELP2176
+        DFHMDF POS=(22,099),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP2177
+* CBLDNM LABEL=LIST-HELP-PTOT-4                                         HELP2178
+F062872 DFHMDF POS=(22,100),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP2179
+               PICOUT='ZZZ',                                           XHELP2180
+               COLOR=BLUE                                               HELP2181
+* CBLDNM LABEL=LIST-SELECT-5                                            HELP2182
+F062881 DFHMDF POS=(22,109),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP2183
+               COLOR=GREEN,                                            XHELP2184
+               HILIGHT=UNDERLINE                                        HELP2185
+        DFHMDF POS=(22,111),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP2186
+* CBLDNM LABEL=LIST-HELP-TRAN-5                                         HELP2187
+F062884 DFHMDF POS=(22,112),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP2188
+               COLOR=YELLOW                                             HELP2189
+* CBLDNM LABEL=LIST-HELP-NAME-5                                         HELP2190
+F062889 DFHMDF POS=(22,117),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP2191
+               COLOR=YELLOW                                             HELP2192
+        DFHMDF POS=(22,126),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP2193
+* CBLDNM LABEL=LIST-HELP-PTOT-5                                         HELP2194
+F062899 DFHMDF POS=(22,127),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP2195
+               PICOUT='ZZZ',                                           XHELP2196
+               COLOR=BLUE                                               HELP2197
+* CBLDNM LABEL=LIST-SELECT-1                                            HELP2198
+F062905 DFHMDF POS=(23,001),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP2199
+               COLOR=GREEN,                                            XHELP2200
+               HILIGHT=UNDERLINE                                        HELP2201
+        DFHMDF POS=(23,003),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP2202
+* CBLDNM LABEL=LIST-HELP-TRAN-1                                         HELP2203
+F062908 DFHMDF POS=(23,004),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP2204
+               COLOR=YELLOW                                             HELP2205
+* CBLDNM LABEL=LIST-HELP-NAME-1                                         HELP2206
+F062913 DFHMDF POS=(23,009),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP2207
+               COLOR=YELLOW                                             HELP2208
+        DFHMDF POS=(23,018),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP2209
+* CBLDNM LABEL=LIST-HELP-PTOT-1                                         HELP2210
+F062923 DFHMDF POS=(23,019),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP2211
+               PICOUT='ZZ9',                                           XHELP2212
+               COLOR=BLUE                                               HELP2213
+* CBLDNM LABEL=LIST-SELECT-2                                            HELP2214
+F062932 DFHMDF POS=(23,028),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP2215
+               COLOR=GREEN,                                            XHELP2216
+               HILIGHT=UNDERLINE                                        HELP2217
+        DFHMDF POS=(23,030),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP2218
+* CBLDNM LABEL=LIST-HELP-TRAN-2                                         HELP2219
+F062935 DFHMDF POS=(23,031),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP2220
+               COLOR=YELLOW                                             HELP2221
+* CBLDNM LABEL=LIST-HELP-NAME-2                                         HELP2222
+F062940 DFHMDF POS=(23,036),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP2223
+               COLOR=YELLOW                                             HELP2224
+        DFHMDF POS=(23,045),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP2225
+* CBLDNM LABEL=LIST-HELP-PTOT-2                                         HELP2226
+F062950 DFHMDF POS=(23,046),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP2227
+               PICOUT='ZZZ',                                           XHELP2228
+               COLOR=BLUE                                               HELP2229
+* CBLDNM LABEL=LIST-SELECT-3                                            HELP2230
+F062959 DFHMDF POS=(23,055),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP2231
+               COLOR=GREEN,                                            XHELP2232
+               HILIGHT=UNDERLINE                                        HELP2233
+        DFHMDF POS=(23,057),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP2234
+* CBLDNM LABEL=LIST-HELP-TRAN-3                                         HELP2235
+F062962 DFHMDF POS=(23,058),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP2236
+               COLOR=YELLOW                                             HELP2237
+* CBLDNM LABEL=LIST-HELP-NAME-3                                         HELP2238
+F062967 DFHMDF POS=(23,063),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP2239
+               COLOR=YELLOW                                             HELP2240
+        DFHMDF POS=(23,072),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP2241
+* CBLDNM LABEL=LIST-HELP-PTOT-3                                         HELP2242
+F062977 DFHMDF POS=(23,073),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP2243
+               PICOUT='ZZZ',                                           XHELP2244
+               COLOR=BLUE                                               HELP2245
+* CBLDNM LABEL=LIST-SELECT-4                                            HELP2246
+F062986 DFHMDF POS=(23,082),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP2247
+               COLOR=GREEN,                                            XHELP2248
+               HILIGHT=UNDERLINE                                        HELP2249
+        DFHMDF POS=(23,084),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP2250
+* CBLDNM LABEL=LIST-HELP-TRAN-4                                         HELP2251
+F062989 DFHMDF POS=(23,085),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP2252
+               COLOR=YELLOW                                             HELP2253
+* CBLDNM LABEL=LIST-HELP-NAME-4                                         HELP2254
+F062994 DFHMDF POS=(23,090),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP2255
+               COLOR=YELLOW                                             HELP2256
+        DFHMDF POS=(23,099),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP2257
+* CBLDNM LABEL=LIST-HELP-PTOT-4                                         HELP2258
+F063004 DFHMDF POS=(23,100),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP2259
+               PICOUT='ZZZ',                                           XHELP2260
+               COLOR=BLUE                                               HELP2261
+* CBLDNM LABEL=LIST-SELECT-5                                            HELP2262
+F063013 DFHMDF POS=(23,109),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP2263
+               COLOR=GREEN,                                            XHELP2264
+               HILIGHT=UNDERLINE                                        HELP2265
+        DFHMDF POS=(23,111),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP2266
+* CBLDNM LABEL=LIST-HELP-TRAN-5                                         HELP2267
+F063016 DFHMDF POS=(23,112),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP2268
+               COLOR=YELLOW                                             HELP2269
+* CBLDNM LABEL=LIST-HELP-NAME-5                                         HELP2270
+F063021 DFHMDF POS=(23,117),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP2271
+               COLOR=YELLOW                                             HELP2272
+        DFHMDF POS=(23,126),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP2273
+* CBLDNM LABEL=LIST-HELP-PTOT-5                                         HELP2274
+F063031 DFHMDF POS=(23,127),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP2275
+               PICOUT='ZZZ',                                           XHELP2276
+               COLOR=BLUE                                               HELP2277
+* CBLDNM LABEL=LIST-SELECT-1                                            HELP2278
+F063037 DFHMDF POS=(24,001),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP2279
+               COLOR=GREEN,                                            XHELP2280
+               HILIGHT=UNDERLINE                                        HELP2281
+        DFHMDF POS=(24,003),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP2282
+* CBLDNM LABEL=LIST-HELP-TRAN-1                                         HELP2283
+F063040 DFHMDF POS=(24,004),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP2284
+               COLOR=YELLOW                                             HELP2285
+* CBLDNM LABEL=LIST-HELP-NAME-1                                         HELP2286
+F063045 DFHMDF POS=(24,009),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP2287
+               COLOR=YELLOW                                             HELP2288
+        DFHMDF POS=(24,018),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP2289
+* CBLDNM LABEL=LIST-HELP-PTOT-1                                         HELP2290
+F063055 DFHMDF POS=(24,019),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP2291
+               PICOUT='ZZ9',                                           XHELP2292
+               COLOR=BLUE                                               HELP2293
+* CBLDNM LABEL=LIST-SELECT-2                                            HELP2294
+F063064 DFHMDF POS=(24,028),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP2295
+               COLOR=GREEN,                                            XHELP2296
+               HILIGHT=UNDERLINE                                        HELP2297
+        DFHMDF POS=(24,030),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP2298
+* CBLDNM LABEL=LIST-HELP-TRAN-2                                         HELP2299
+F063067 DFHMDF POS=(24,031),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP2300
+               COLOR=YELLOW                                             HELP2301
+* CBLDNM LABEL=LIST-HELP-NAME-2                                         HELP2302
+F063072 DFHMDF POS=(24,036),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP2303
+               COLOR=YELLOW                                             HELP2304
+        DFHMDF POS=(24,045),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP2305
+* CBLDNM LABEL=LIST-HELP-PTOT-2                                         HELP2306
+F063082 DFHMDF POS=(24,046),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP2307
+               PICOUT='ZZZ',                                           XHELP2308
+               COLOR=BLUE                                               HELP2309
+* CBLDNM LABEL=LIST-SELECT-3                                            HELP2310
+F063091 DFHMDF POS=(24,055),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP2311
+               COLOR=GREEN,                                            XHELP2312
+               HILIGHT=UNDERLINE                                        HELP2313
+        DFHMDF POS=(24,057),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP2314
+* CBLDNM LABEL=LIST-HELP-TRAN-3                                         HELP2315
+F063094 DFHMDF POS=(24,058),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP2316
+               COLOR=YELLOW                                             HELP2317
+* CBLDNM LABEL=LIST-HELP-NAME-3                                         HELP2318
+F063099 DFHMDF POS=(24,063),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP2319
+               COLOR=YELLOW                                             HELP2320
+        DFHMDF POS=(24,072),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP2321
+* CBLDNM LABEL=LIST-HELP-PTOT-3                                         HELP2322
+F063109 DFHMDF POS=(24,073),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP2323
+               PICOUT='ZZZ',                                           XHELP2324
+               COLOR=BLUE                                               HELP2325
+* CBLDNM LABEL=LIST-SELECT-4                                            HELP2326
+F063118 DFHMDF POS=(24,082),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP2327
+               COLOR=GREEN,                                            XHELP2328
+               HILIGHT=UNDERLINE                                        HELP2329
+        DFHMDF POS=(24,084),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP2330
+* CBLDNM LABEL=LIST-HELP-TRAN-4                                         HELP2331
+F063121 DFHMDF POS=(24,085),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP2332
+               COLOR=YELLOW                                             HELP2333
+* CBLDNM LABEL=LIST-HELP-NAME-4                                         HELP2334
+F063126 DFHMDF POS=(24,090),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP2335
+               COLOR=YELLOW                                             HELP2336
+        DFHMDF POS=(24,099),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP2337
+* CBLDNM LABEL=LIST-HELP-PTOT-4                                         HELP2338
+F063136 DFHMDF POS=(24,100),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP2339
+               PICOUT='ZZZ',                                           XHELP2340
+               COLOR=BLUE                                               HELP2341
+* CBLDNM LABEL=LIST-SELECT-5                                            HELP2342
+F063145 DFHMDF POS=(24,109),LENGTH=001,ATTRB=(UNPROT,NORM),            XHELP2343
+               COLOR=GREEN,                                            XHELP2344
+               HILIGHT=UNDERLINE                                        HELP2345
+        DFHMDF POS=(24,111),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP2346
+* CBLDNM LABEL=LIST-HELP-TRAN-5                                         HELP2347
+F063148 DFHMDF POS=(24,112),LENGTH=004,ATTRB=(ASKIP,NORM,FSET),        XHELP2348
+               COLOR=YELLOW                                             HELP2349
+* CBLDNM LABEL=LIST-HELP-NAME-5                                         HELP2350
+F063153 DFHMDF POS=(24,117),LENGTH=008,ATTRB=(ASKIP,NORM,FSET),        XHELP2351
+               COLOR=YELLOW                                             HELP2352
+        DFHMDF POS=(24,126),LENGTH=000,ATTRB=(ASKIP,BRT)                HELP2353
+* CBLDNM LABEL=LIST-HELP-PTOT-5                                         HELP2354
+F063163 DFHMDF POS=(24,127),LENGTH=003,ATTRB=(ASKIP,NORM,FSET),        XHELP2355
+               PICOUT='ZZZ',                                           XHELP2356
+               COLOR=BLUE                                               HELP2357
+* CBLDNM LABEL=LIST-MESSAGE                                             HELP2358
+F063169 DFHMDF POS=(25,001),LENGTH=078,ATTRB=(ASKIP,BRT),              XHELP2359
+               COLOR=RED                                                HELP2360
+        DFHMDF POS=(25,080),LENGTH=001,ATTRB=(ASKIP,BRT),INITIAL=' '    HELP2361
+        DFHMDF POS=(26,001),LENGTH=005,ATTRB=(ASKIP,NORM),             XHELP2362
+               INITIAL='Opts:',                                        XHELP2363
+               COLOR=TURQUOISE                                          HELP2364
+        DFHMDF POS=(26,007),LENGTH=001,ATTRB=(ASKIP,BRT),              XHELP2365
+               INITIAL='S'                                              HELP2366
+        DFHMDF POS=(26,009),LENGTH=009,ATTRB=(ASKIP,NORM),             XHELP2367
+               INITIAL='= Select,',                                    XHELP2368
+               COLOR=PINK                                               HELP2369
+        DFHMDF POS=(26,019),LENGTH=001,ATTRB=(ASKIP,BRT),              XHELP2370
+               INITIAL='A'                                              HELP2371
+        DFHMDF POS=(26,021),LENGTH=006,ATTRB=(ASKIP,NORM),             XHELP2372
+               INITIAL='= Add,',                                       XHELP2373
+               COLOR=PINK                                               HELP2374
+        DFHMDF POS=(26,028),LENGTH=001,ATTRB=(ASKIP,BRT),              XHELP2375
+               INITIAL='D'                                              HELP2376
+        DFHMDF POS=(26,030),LENGTH=009,ATTRB=(ASKIP,NORM),             XHELP2377
+               INITIAL='= Delete,',                                    XHELP2378
+               COLOR=PINK                                               HELP2379
+        DFHMDF POS=(26,040),LENGTH=001,ATTRB=(ASKIP,BRT),              XHELP2380
+               INITIAL='P'                                              HELP2381
+        DFHMDF POS=(26,042),LENGTH=008,ATTRB=(ASKIP,NORM),             XHELP2382
+               INITIAL='= Print.',                                     XHELP2383
+               COLOR=PINK                                               HELP2384
+        DFHMDF POS=(27,001),LENGTH=005,ATTRB=(ASKIP,NORM),             XHELP2385
+               INITIAL='Keys:',                                        XHELP2386
+               COLOR=TURQUOISE                                          HELP2387
+        DFHMDF POS=(27,007),LENGTH=002,ATTRB=(ASKIP,BRT),              XHELP2388
+               INITIAL='F1'                                             HELP2389
+        DFHMDF POS=(27,010),LENGTH=007,ATTRB=(ASKIP,NORM),             XHELP2390
+               INITIAL='= Help,',                                      XHELP2391
+               COLOR=PINK                                               HELP2392
+        DFHMDF POS=(27,018),LENGTH=002,ATTRB=(ASKIP,BRT),              XHELP2393
+               INITIAL='F3'                                             HELP2394
+        DFHMDF POS=(27,021),LENGTH=006,ATTRB=(ASKIP,NORM),             XHELP2395
+               INITIAL='= End,',                                       XHELP2396
+               COLOR=PINK                                               HELP2397
+        DFHMDF POS=(27,044),LENGTH=005,ATTRB=(ASKIP,BRT),              XHELP2398
+               INITIAL='F6/F7'                                          HELP2399
+        DFHMDF POS=(27,050),LENGTH=011,ATTRB=(ASKIP,NORM),             XHELP2400
+               INITIAL='= Top/Prev,',                                  XHELP2401
+               COLOR=PINK                                               HELP2402
+        DFHMDF POS=(27,062),LENGTH=005,ATTRB=(ASKIP,BRT),              XHELP2403
+               INITIAL='F8/F9'                                          HELP2404
+        DFHMDF POS=(27,068),LENGTH=011,ATTRB=(ASKIP,NORM),             XHELP2405
+               INITIAL='= Next/Bot.',                                  XHELP2406
+               COLOR=PINK                                               HELP2407
+*                                                                       HELP2408
+        PRINT  ON,GEN                                                   HELP2409
+        TITLE  'H E L P M S     ( 0 1 . 2 5 )   -   C I C S   H E L P  XHELP2410
+                M A P S E T                                 '           HELP2411
+        DFHMSD TYPE=FINAL                                               HELP2412
