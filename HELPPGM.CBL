@@ -2505,6 +2505,7 @@
 /DLC4/       MOVE +3                   TO VAR-FINDL                             
 /DLC4/       MOVE UNDERLN-HEADER       TO VAR-FIND                              
 /DLC4/       COMPUTE VAR-REPLL = LENGTH OF PCL-USTOP + 1                        
+/DLC4/                         + LENGTH OF PCL-NORM + 2                         
 /DLC4/       STRING PCL-ESC PCL-USTOP PCL-ESC PCL-NORM ' '                      
 /DLC4/           DELIMITED BY SIZE   INTO VAR-REPL                              
 /DLC4/       MOVE ZEROES               TO TXT-PNTR                              
